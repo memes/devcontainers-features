@@ -45,7 +45,8 @@ jobs:
       matrix:
         features:
           - direnv
-          - google-cloud-cli
+          # TODO @memes - disabling the GCP scenarios as they are hitting rate limits when being tested.
+          # - google-cloud-cli
           - opentofu
           - starship
           - talisman
