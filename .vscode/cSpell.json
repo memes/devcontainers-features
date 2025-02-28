@@ -1,0 +1,28 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "version": "0.2",
+    "words": [
+        "apks",
+        "creds",
+        "devcontainers",
+        "devpods",
+        "direnv",
+        "esbenp",
+        "fedoraproject",
+        "gpgcheck",
+        "gpgkey",
+        "Gruntfuggly",
+        "INSTALLFROMGITHUBRELEASE",
+        "INSTALLFROMTARBALL",
+        "istioctl",
+        "noninteractive",
+        "opentofu",
+        "pipx",
+        "pkgs",
+        "prereqs",
+        "rpms",
+        "terragrunt",
+        "tflint",
+        "USERPROFILE"
+    ]
+}

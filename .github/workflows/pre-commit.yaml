@@ -1,0 +1,30 @@
+# These github actions will perform linting using pre-commit.
+# yamllint disable rule:line-length
+# spell-checker: disable
+---
+name: pre-commit
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install talisman
+        run: |
+          sudo curl -sLo /usr/local/bin/talisman https://github.com/thoughtworks/talisman/releases/download/v1.32.0/talisman_linux_amd64
+          sudo chmod 0755 /usr/local/bin/talisman
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: pre-commit/action@v3.0.1
