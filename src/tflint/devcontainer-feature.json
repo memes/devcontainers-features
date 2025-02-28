@@ -1,0 +1,37 @@
+{
+    "id": "tflint",
+    "name": "tflint",
+    "version": "0.0.1",
+    "description": "Installs tflint from GitHub release or Alpine repository and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/tflint",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "tflint",
+        "terraform",
+        "tf",
+        "tofu",
+        "opentofu",
+        "precommit",
+        "pre-commit",
+        "linter",
+        "linting"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available in distro repo or GitHub release. NOTE: If a version is provided and a matching Alpine package/GitHub Release can not be found the feature will fail."
+        },
+        "installFromGitHubRelease": {
+            "type": "boolean",
+            "default": false,
+            "description": "When true, force pulling releases directly from published GitHub Release regardless of the default installation method."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
