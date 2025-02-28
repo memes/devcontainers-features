@@ -1,0 +1,36 @@
+{
+    "id": "google-cloud-cli",
+    "name": "Google Cloud SDK CLI",
+    "version": "0.0.1",
+    "description": "Installs Google Cloud SDK CLI from distro repository or published tarball and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/google-cloud-cli",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "gcp",
+        "Google Cloud",
+        "gcloud"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version of Google Cloud SDK to install; default value is 'latest' which will install the most recent available in distro repo or Google published tarball. NOTE: If a version is provided and a matching package/tarball can not be found the feature will fail."
+        },
+        "installFromTarball": {
+            "type": "boolean",
+            "default": false,
+            "description": "When true, force pulling releases directly from published tarball regardless of the default installation method."
+        },
+        "components": {
+            "type": "string",
+            "default": "",
+            "description": "Install additional components provided by Google Cloud SDK as a space separated list of components identifiers. The identifiers of the components must match those shown by [gcloud components list](https://cloud.google.com/sdk/docs/components#listing_components) regardless of installation method - the script will translate component ids to package names as needed."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

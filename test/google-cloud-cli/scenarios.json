@@ -1,0 +1,203 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0"
+            }
+        }
+    },
+    "debian_full_deb_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0-0"
+            }
+        }
+    },
+    "debian_tarball": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "google-cloud-cli": {
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "debian_versioned_tarball": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "debian_components": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "google-cloud-cli": {
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "debian_versioned_components": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0"
+            }
+        }
+    },
+    "ubuntu_tarball": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "google-cloud-cli": {
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "ubuntu_versioned_tarball": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "ubuntu_components": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "google-cloud-cli": {
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "ubuntu_versioned_components": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0"
+            }
+        }
+    },
+    "alpine_components": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "google-cloud-cli": {
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "alpine_versioned_components": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0"
+            }
+        }
+    },
+    "fedora_tarball": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "google-cloud-cli": {
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "fedora_versioned_tarball": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "fedora_components": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "google-cloud-cli": {
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "fedora_versioned_components": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0"
+            }
+        }
+    },
+    "ubi_tarball": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "google-cloud-cli": {
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "ubi_versioned_tarball": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "installFromTarball": "true"
+            }
+        }
+    },
+    "ubi_components": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "google-cloud-cli": {
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    },
+    "ubi_versioned_components": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "google-cloud-cli": {
+                "version": "509.0.0",
+                "components": "bigtable kubectl skaffold"
+            }
+        }
+    }
+}
