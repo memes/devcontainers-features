@@ -1,4 +1,3 @@
-# yamllint disable rule:line-length
 ---
 name: "CI - Test Features"
 # yamllint disable-line rule:truthy
