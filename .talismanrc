@@ -10,4 +10,6 @@ fileignoreconfig:
     checksum: e45d34b6b90ccc4ddebcad239e86071f6e0976b54b1f5caaf989d74b05b7e976
   - filename: src/google-cloud-cli/install.sh
     checksum: 1e0301546a33649acbe064727ca9af5340bc47c2eef52621abc206c638b2c9b6
+  - filename: src/opentofu/install.sh
+    checksum: 15e98214c4a5bd5fe2850f0943dd4ed2d7963f51c99d5aed8b7ce17f80ecc1ab
 version: "1.0"
