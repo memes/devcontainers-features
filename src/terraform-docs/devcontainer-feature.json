@@ -1,7 +1,7 @@
 {
     "id": "terraform-docs",
     "name": "terraform-docs",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Installs terraform-docs from GitHub release and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/starship",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
