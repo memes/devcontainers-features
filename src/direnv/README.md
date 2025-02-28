@@ -7,7 +7,7 @@ Installs direnv from distro repository or GitHub release and adds it to the glob
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/direnv:0": {}
+    "ghcr.io/memes/devcontainers-features/direnv:1": {}
 }
 ```
 
@@ -52,4 +52,4 @@ When the OS is unrecognised, or for tested [OS images](#os-support) that do not 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/direnv/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

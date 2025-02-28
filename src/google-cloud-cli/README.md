@@ -7,7 +7,7 @@ Installs Google Cloud SDK CLI from distro repository or published tarball and ad
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/google-cloud-cli:0": {}
+    "ghcr.io/memes/devcontainers-features/google-cloud-cli:1": {}
 }
 ```
 
@@ -84,4 +84,4 @@ Google's servers.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/google-cloud-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

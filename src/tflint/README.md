@@ -7,7 +7,7 @@ Installs tflint from GitHub release or Alpine repository and adds it to the glob
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/tflint:0": {}
+    "ghcr.io/memes/devcontainers-features/tflint:1": {}
 }
 ```
 
@@ -48,4 +48,4 @@ deploy from package by **default**. All other OS's will trigger a pull from GitH
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/tflint/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
