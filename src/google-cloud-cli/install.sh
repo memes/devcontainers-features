@@ -43,6 +43,10 @@ prereqs() {
 }
 
 install_from_tarball() {
+    # Some gcloud binaries are linked to GNU libc; add gcompat package as necessary
+    if grep -q '^ID.*alpine' /etc/os-release && ! apk info -e gcompat; then
+        prereqs gcompat
+    fi
     type curl >/dev/null 2>/dev/null || prereqs curl
     type tar >/dev/null 2>/dev/null || prereqs tar
     type curl >/dev/null 2>/dev/null || error "curl is missing"

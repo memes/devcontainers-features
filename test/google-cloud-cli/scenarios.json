@@ -16,7 +16,7 @@
         }
     },
     "debian_tarball": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "image": "mcr.microsoft.com/devcontainers/python:3-bookworm",
         "features": {
             "google-cloud-cli": {
                 "installFromTarball": "true"
@@ -24,7 +24,7 @@
         }
     },
     "debian_versioned_tarball": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "image": "mcr.microsoft.com/devcontainers/python:3-bookworm",
         "features": {
             "google-cloud-cli": {
                 "version": "509.0.0",
@@ -125,7 +125,7 @@
         }
     },
     "fedora_tarball": {
-        "image": "registry.fedoraproject.org/fedora:latest",
+        "image": "quay.io/fedora/python-312",
         "features": {
             "google-cloud-cli": {
                 "installFromTarball": "true"
@@ -133,7 +133,7 @@
         }
     },
     "fedora_versioned_tarball": {
-        "image": "registry.fedoraproject.org/fedora:latest",
+        "image": "quay.io/fedora/python-312",
         "features": {
             "google-cloud-cli": {
                 "version": "509.0.0",

@@ -22,7 +22,7 @@
         "installFromTarball": {
             "type": "boolean",
             "default": false,
-            "description": "When true, force pulling releases directly from published tarball regardless of the default installation method."
+            "description": "When true, force pulling releases directly from published tarball regardless of the default installation method. NOTE: Tarball installer requires that the base image has python installed."
         },
         "components": {
             "type": "string",

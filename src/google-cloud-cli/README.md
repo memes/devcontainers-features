@@ -16,7 +16,7 @@ Installs Google Cloud SDK CLI from distro repository or published tarball and ad
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | The specific version of Google Cloud SDK to install; default value is 'latest' which will install the most recent available in distro repo or Google published tarball. NOTE: If a version is provided and a matching package/tarball can not be found the feature will fail. | string | latest |
-| installFromTarball | When true, force pulling releases directly from published tarball regardless of the default installation method. | boolean | false |
+| installFromTarball | When true, force pulling releases directly from published tarball regardless of the default installation method. NOTE: Tarball installer requires that the base image has python installed. | boolean | false |
 | components | Install additional components provided by Google Cloud SDK as a space separated list of components identifiers. The identifiers of the components must match those shown by [gcloud components list](https://cloud.google.com/sdk/docs/components#listing_components) regardless of installation method - the script will translate component ids to package names as needed. | string | - |
 
 <!-- markdownlint-disable MD041 -->
@@ -37,7 +37,7 @@ directories.
             "version": "511.0.0",
             "components": "pubsub-emulator istioctl kubectl"
         }
-    },.
+    },
     "mounts": [
         "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.config/gcloud,type=bind",
         "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,readonly"
@@ -47,14 +47,18 @@ directories.
 
 ## OS Support
 
-This feature should support any base image that provides a POSIX shell to execute `install.sh`, and functional `curl` and `tar` binaries.
+This feature should support any base image that provides a POSIX shell to execute `install.sh`, and functional `curl`
+and `tar` binaries.
 
 It has been tested and verified using the following images on ***amd64*** and ***arm64*** platforms:
 
-* `mcr.microsoft.com/devcontainers/base:alpine`
-* `mcr.microsoft.com/devcontainers/base:debian`
+* `mcr.microsoft.com/devcontainers/base:alpine` - NOTE: Feature will automatically install `gcompat` to support SDK
+  binaries linked to GNU libc
+* `mcr.microsoft.com/devcontainers/base:debian` (Package scenarios)
+* `mcr.microsoft.com/devcontainers/python:3-bookworm` (Tarball scenarios)
 * `mcr.microsoft.com/devcontainers/base:ubuntu`
-* `registry.fedoraproject.org/fedora:latest`
+* `registry.fedoraproject.org/fedora:latest` (Package scenarios)
+* `quay.io/fedora/python-312` (Tarball scenarios)
 * `registry.access.redhat.com/ubi9/ubi:latest`
 
 ## Installation methods
@@ -74,6 +78,8 @@ packages through `apt` or `dnf` tools.
 
 When the OS is unrecognised, or if it is Alpine, the **default** install method is to download the latest tarball from
 Google's servers.
+
+> NOTE: The tarball installer requires that the base image has Python pre-installed - looking at you `base:debian`.
 
 
 ---
