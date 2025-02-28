@@ -1,18 +1,14 @@
 {
+    "name": "memes-devcontainers-features",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
     "customizations": {
         "vscode": {
-            "settings": {
-                "json.schemas": [
-                    {
-                        "fileMatch": [
-                            "*/devcontainer-feature.json"
-                        ],
-                        "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
-                    }
-                ]
-            },
             "extensions": [
+                "Gruntfuggly.todo-tree",
+                "redhat.vscode-yaml",
+                "streetsidesoftware.code-spell-checker",
+                "esbenp.prettier-vscode",
+                "DavidAnson.vscode-markdownlint",
                 "mads-hartmann.bash-ide-vscode"
             ]
         }
@@ -20,6 +16,13 @@
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
-    "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    "containerUser": "node",
+    "onCreateCommand": {
+        "pre-commit": "sudo sh -c 'apt update && apt install -y --no-install-recommends pipx && rm -rf /var/lib/apt/lists/*' && pipx install pre-commit",
+        "talisman": "sudo sh -c 'curl -fsSLo /usr/local/bin/talisman https://github.com/thoughtworks/talisman/releases/download/v1.32.0/talisman_linux_amd64 && chmod 0755 /usr/local/bin/talisman'"
+    },
+    "updateContentCommand": {
+        "devcontainers-cli": "npm install -g @devcontainers/cli",
+        "pre-commit": "pre-commit install --hook-type commit-msg --hook-type pre-commit"
+    }
 }
