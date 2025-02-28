@@ -1,0 +1,90 @@
+{
+    "$schema": "https://raw.githubusercontent.com/googleapis/release-please/refs/heads/main/schemas/config.json",
+    "release-type": "simple",
+    "bump-minor-pre-major": true,
+    "bump-patch-for-minor-pre-major": false,
+    "skip-github-release": true,
+    "bootstrap-sha": "7ab998b750ec906c17f912997fdfb637b8d3aac2",
+    "packages": {
+        "src/direnv": {
+            "component": "direnv",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/google-cloud-cli": {
+            "component": "google-cloud-cli",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/opentofu": {
+            "component": "opentofu",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/starship": {
+            "component": "starship",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/talisman": {
+            "component": "talisman",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/terraform-docs": {
+            "component": "terraform-docs",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/terragrunt": {
+            "component": "terragrunt",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
+        "src/tflint": {
+            "component": "tflint",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        }
+    }
+}
