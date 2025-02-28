@@ -1,13 +1,15 @@
 {
-    "color_and_hello": {
+    "all_features": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
-            }
+            "direnv": {},
+            "google-cloud-cli": {},
+            "opentofu": {},
+            "starship": {},
+            "talisman": {},
+            "terraform-docs": {},
+            "terragrunt": {},
+            "tflint": {}
         }
     }
 }
