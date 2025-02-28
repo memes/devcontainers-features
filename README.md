@@ -20,14 +20,14 @@ with whatever is the latest release of [starship](https://starship.rs)
 {
     "name": "my-project",
     "image": "mcr.microsoft.com/devcontainers/go:1.24-bookworm",
-    "features: {
-        "ghcr.io/memes/devcontainers-features/google-cloud-cli:0": {
+    "features": {
+        "ghcr.io/memes/devcontainers-features/google-cloud-cli:1": {
             "version": "511.0.0",
             "components": "pubsub-emulator istioctl kubectl"
         },
-        "ghcr.io/memes/devcontainer-features/starship:0": {},
-        "ghcr.io/memes/devcontainer-features/talisman:0": {
-            "version": "1.32.0
+        "ghcr.io/memes/devcontainer-features/starship:1": {},
+        "ghcr.io/memes/devcontainer-features/talisman:1": {
+            "version": "1.32.0"
         }
     },
     "mounts": [
