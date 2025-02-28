@@ -29,7 +29,7 @@ jobs:
               - '!src/google-cloud-cli/*.md'
               - 'test/google-cloud-cli/**'
             opentofu:
-              - 'src/opentofu/**''
+              - 'src/opentofu/**'
               - '!src/opentofu/*.md'
               - 'test/opentofu/**'
             starship:
