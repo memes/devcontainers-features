@@ -45,7 +45,7 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     if [ -z "${TFDOCS_VERSION}" ]; then
-        TFDOCS_VERSION="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/terraform-docs/terraform-docs/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        TFDOCS_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/terraform-docs/terraform-docs/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         TFDOCS_VERSION="${TFDOCS_VERSION#v}"
         [ -z "${TFDOCS_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
@@ -60,7 +60,7 @@ install_from_github() {
             error "Unhandled machine arch $(uname -m)"
             ;;
     esac
-    curl -sL "https://github.com/terraform-docs/terraform-docs/releases/download/v${TFDOCS_VERSION}/terraform-docs-v${TFDOCS_VERSION}-linux-${tfdocs_platform}.tar.gz" | \
+    curl -fsSL --retry 5 --retry-max-time 90 "https://github.com/terraform-docs/terraform-docs/releases/download/v${TFDOCS_VERSION}/terraform-docs-v${TFDOCS_VERSION}-linux-${tfdocs_platform}.tar.gz" | \
         tar xzf - -C /usr/local/bin terraform-docs || \
         error "Failed to download and extract terraform-docs ${TFDOCS_VERSION} from tarball"
 }

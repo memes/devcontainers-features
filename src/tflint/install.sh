@@ -47,9 +47,9 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type unzip >/dev/null 2>/dev/null || error "unzip is missing"
     if [ -z "${TFLINT_VERSION}" ]; then
-        TFLINT_VERSION="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/terraform-linters/tflint/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        TFLINT_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/terraform-linters/tflint/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         TFLINT_VERSION="${TFLINT_VERSION#v}"
-        [ -z "${TFLINT_VERSION}" ] && error "Faild to get latest version tag from GitHub"
+        [ -z "${TFLINT_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
     case "$(uname -m)" in
         aarch64)
@@ -63,7 +63,7 @@ install_from_github() {
             ;;
     esac
     tmp_dir="$(mktemp -d tflintXXX)"
-    curl -fsSLo "${tmp_dir}/tflint.zip" "https://github.com/terraform-linters/tflint/releases/download/v${TFLINT_VERSION}/tflint_linux_${tflint_platform}.zip" || \
+    curl -fsSLo "${tmp_dir}/tflint.zip" --retry 5 --retry-max-time 90 "https://github.com/terraform-linters/tflint/releases/download/v${TFLINT_VERSION}/tflint_linux_${tflint_platform}.zip" || \
         error "Failed to download tflint ${TFLINT_VERSION} zip file"
     unzip "${tmp_dir}/tflint.zip" -d "${tmp_dir}" || \
         error "Failed to extract from tflint ${TFLINT_VERSION} zip file"

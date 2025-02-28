@@ -47,18 +47,18 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     if [ -z "${STARSHIP_VERSION}" ]; then
-        STARSHIP_VERSION="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/starship/starship/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        STARSHIP_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/starship/starship/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         STARSHIP_VERSION="${STARSHIP_VERSION#v}"
-        [ -z "${STARSHIP_VERSION}" ] && error "Faild to get latest version tag from GitHub"
+        [ -z "${STARSHIP_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
-    curl -fsSL "https://github.com/starship/starship/releases/download/v${STARSHIP_VERSION}/starship-$(uname -m)-unknown-linux-musl.tar.gz" | \
+    curl -fsSL --retry 5 --retry-max-time 90 "https://github.com/starship/starship/releases/download/v${STARSHIP_VERSION}/starship-$(uname -m)-unknown-linux-musl.tar.gz" | \
         tar xzf - -C /usr/local/bin || \
         error "Failed to download and extract starship ${STARSHIP_VERSION} tarball"
 }
 
 install_apk() {
     apk --no-cache add "starship${STARSHIP_VERSION:+"=~${STARSHIP_VERSION}"}" || \
-        error "Failed to insall starship${STARSHIP_VERSION:+"=~${STARSHIP_VERSION}"} from repo"
+        error "Failed to install starship${STARSHIP_VERSION:+"=~${STARSHIP_VERSION}"} from repo"
 }
 
 [ "$(id -u)" -eq 0 ] || error 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'

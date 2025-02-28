@@ -53,7 +53,7 @@ install_from_tarball() {
         sdk_platform=arm
     fi
 
-    curl -fsSL "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli${GCLOUD_VERSION:+"-${GCLOUD_VERSION}"}-linux-${sdk_platform}.tar.gz" | \
+    curl -fsSL --retry 5 --retry-max-time 90 "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli${GCLOUD_VERSION:+"-${GCLOUD_VERSION}"}-linux-${sdk_platform}.tar.gz" | \
         tar xzf - -C /opt || \
         error "Failed to download Google Cloud SDK tarball"
 
@@ -80,7 +80,7 @@ install_deb() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     mkdir -p /etc/apt/keyrings
-    curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | gpg --dearmor -o /etc/apt/keyrings/google-cloud-cli.gpg || \
+    curl -fsSL --retry 5 --retry-max-time 90 https://packages.cloud.google.com/apt/doc/apt-key.gpg | gpg --dearmor -o /etc/apt/keyrings/google-cloud-cli.gpg || \
         error "Failed to install Google Cloud apt key"
     chmod 0644 /etc/apt/keyrings/google-cloud-cli.gpg
     echo "deb [signed-by=/etc/apt/keyrings/google-cloud-cli.gpg] https://packages.cloud.google.com/apt cloud-sdk main" > /etc/apt/sources.list.d/google-cloud-cli.list

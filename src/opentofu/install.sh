@@ -47,9 +47,9 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     if [ -z "${TOFU_VERSION}" ]; then
-        TOFU_VERSION="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/opentofu/opentofu/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        TOFU_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/opentofu/opentofu/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         TOFU_VERSION="${TOFU_VERSION#v}"
-        [ -z "${TOFU_VERSION}" ] && error "Faild to get latest version tag from GitHub"
+        [ -z "${TOFU_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
     case "$(uname -m)" in
         aarch64)
@@ -62,7 +62,7 @@ install_from_github() {
             error "Unhandled machine arch $(uname -m)"
             ;;
     esac
-    curl -fsSL "https://github.com/opentofu/opentofu/releases/download/v${TOFU_VERSION}/tofu_${TOFU_VERSION}_linux_${tofu_platform}.tar.gz" | \
+    curl -fsSL --retry 5 --retry-max-time 90 "https://github.com/opentofu/opentofu/releases/download/v${TOFU_VERSION}/tofu_${TOFU_VERSION}_linux_${tofu_platform}.tar.gz" | \
         tar xzf - -C /usr/local/bin tofu || \
         error "Failed to download OpenTofu ${TOFU_VERSION} tarball"
     chmod 0755 /usr/local/bin/tofu
@@ -72,7 +72,7 @@ install_apk() {
     grep -q '^@community' /etc/apk/repositories || \
         echo '@community https://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories
     apk --no-cache add "opentofu@community${TOFU_VERSION:+"=~${TOFU_VERSION}"}" || \
-        error "Failed to insall opentofu from community repo"
+        error "Failed to install opentofu from community repo"
 }
 
 install_deb() {
@@ -81,9 +81,9 @@ install_deb() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     mkdir -p /etc/apt/keyrings
-    curl -fsSLo /etc/apt/keyrings/opentofu.gpg https://get.opentofu.org/opentofu.gpg || \
+    curl -fsSLo /etc/apt/keyrings/opentofu.gpg --retry 5 --retry-max-time 90 https://get.opentofu.org/opentofu.gpg || \
         error "Failed to download opentofu GPG key"
-    curl -fsSL https://packages.opentofu.org/opentofu/tofu/gpgkey | gpg --dearmor -o /etc/apt/keyrings/opentofu-repo.gpg || \
+    curl -fsSL --retry 5 --retry-max-time 90 https://packages.opentofu.org/opentofu/tofu/gpgkey | gpg --dearmor -o /etc/apt/keyrings/opentofu-repo.gpg || \
         error "Failed to download opentofu repo GPG key"
     chmod 0644 /etc/apt/keyrings/opentofu.gpg /etc/apt/keyrings/opentofu-repo.gpg
     echo "deb [signed-by=/etc/apt/keyrings/opentofu.gpg,/etc/apt/keyrings/opentofu-repo.gpg] https://packages.opentofu.org/opentofu/tofu/any/ any main" > /etc/apt/sources.list.d/opentofu.list

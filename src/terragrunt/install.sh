@@ -43,7 +43,7 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     if [ -z "${TERRAGRUNT_VERSION}" ]; then
-        TERRAGRUNT_VERSION="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/gruntwork-io/terragrunt/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        TERRAGRUNT_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/gruntwork-io/terragrunt/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         TERRAGRUNT_VERSION="${TERRAGRUNT_VERSION#v}"
         [ -z "${TERRAGRUNT_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
@@ -58,7 +58,7 @@ install_from_github() {
             error "Unhandled machine arch $(uname -m)"
             ;;
     esac
-    curl -sLo /usr/local/bin/terragrunt "https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION#v}/terragrunt_linux_${terragrunt_platform}" || \
+    curl -fsSLo /usr/local/bin/terragrunt --retry 5 --retry-max-time 90 "https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION#v}/terragrunt_linux_${terragrunt_platform}" || \
         error "Failed to download terragrunt v${TERRAGRUNT_VERSION} binary"
         chmod 0755 /usr/local/bin/terragrunt
 }

@@ -46,7 +46,7 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     if [ -z "${DIRENV_VERSION}" ]; then
-        DIRENV_VERSION="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/direnv/direnv/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        DIRENV_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/direnv/direnv/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         DIRENV_VERSION="${DIRENV_VERSION#v}"
         [ -z "${DIRENV_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
@@ -61,8 +61,8 @@ install_from_github() {
             error "Unhandled machine arch $(uname -m)"
             ;;
     esac
-    curl -fsSLo /usr/local/bin/direnv "https://github.com/direnv/direnv/releases/download/v${DIRENV_VERSION}/direnv.linux-${direnv_platform}" || \
-        error "Failed to download direnv v${DIRENV_VERSION} binary from GitHub"
+    curl -fsSLo /usr/local/bin/direnv --retry 5 --retry-max-time 90 "https://github.com/direnv/direnv/releases/download/v${DIRENV_VERSION}/direnv.linux-${direnv_platform}" || \
+            error "Failed to download direnv v${DIRENV_VERSION} binary from GitHub"
     chmod 0755 /usr/local/bin/direnv
 }
 

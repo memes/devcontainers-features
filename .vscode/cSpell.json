@@ -24,7 +24,10 @@
         "pkgs",
         "prereqs",
         "rpms",
+        "sslcacert",
+        "sslverify",
         "terragrunt",
+        "TFDOCS",
         "tflint",
         "USERPROFILE"
     ]
