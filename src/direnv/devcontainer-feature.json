@@ -1,6 +1,6 @@
 {
     "id": "direnv",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "name": "direnv",
     "description": "Installs direnv from distro repository or GitHub release and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/direnv",
