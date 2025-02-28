@@ -1,0 +1,30 @@
+{
+    "id": "terraform-docs",
+    "name": "terraform-docs",
+    "version": "0.0.1",
+    "description": "Installs terraform-docs from GitHub release and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/starship",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "terraform-docs",
+        "precommit",
+        "pre-commit",
+        "terraform",
+        "tf",
+        "tofu",
+        "opentofu"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available in distro repo or GitHub release.<br/>NOTE: If a version is provided and a matching GitHub Release can not be found the feature will fail."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

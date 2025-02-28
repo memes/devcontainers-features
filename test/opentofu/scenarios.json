@@ -1,0 +1,127 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8"
+            }
+        }
+    },
+    "debian_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "opentofu": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "debian_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8"
+            }
+        }
+    },
+    "ubuntu_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "opentofu": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "opentofu": {
+                "version": "1.7.2"
+            }
+        }
+    },
+    "alpine_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "opentofu": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "alpine_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "opentofu": {
+                "version": "1.8.3"
+            }
+        }
+    },
+    "fedora_github": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "opentofu": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_versioned_github": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8"
+            }
+        }
+    },
+    "ubi_github": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "opentofu": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_versioned_github": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "opentofu": {
+                "version": "1.8.8",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+# Ignore any lingering direnv files
+.envrc
+.direnv
+.tool-versions

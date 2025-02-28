@@ -1,0 +1,32 @@
+{
+    "id": "starship",
+    "name": "starship",
+    "version": "0.0.1",
+    "description": "Installs Starship from GitHub Release or Alpine repository and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/starship",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "starship",
+        "prompt",
+        "bash",
+        "zsh"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available in distro repo or GitHub release. NOTE: If a version is provided and a matching distro package/GitHub Release can not be found the feature will fail."
+        },
+        "installFromGitHubRelease": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true download and install from GitHub release rather than Alpine package repository."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "terraform-docs": {
+                "version": "0.18.0"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "terraform-docs": {
+                "version": "0.18.0"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "terraform-docs": {
+                "version": "0.18.0"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "terraform-docs": {
+                "version": "0.18.0"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "terraform-docs": {
+                "version": "0.18.0"
+            }
+        }
+    }
+}

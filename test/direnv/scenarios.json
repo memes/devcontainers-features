@@ -1,0 +1,110 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "direnv": {
+                "version": "2.32.1"
+            }
+        }
+    },
+    "debian_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "direnv": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "debian_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "direnv": {
+                "version": "2.34.0",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "direnv": {
+                "version": "2.25.2"
+            }
+        }
+    },
+    "ubuntu_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "direnv": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "direnv": {
+                "version": "2.34.0",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "direnv": {
+                "version": "2.34.0"
+            }
+        }
+    },
+    "alpine_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "direnv": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "alpine_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "direnv": {
+                "version": "2.34.0",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "direnv": {
+                "version": "2.32.3"
+            }
+        }
+    },
+    "fedora_github": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "direnv": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_versioned_github": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "direnv": {
+                "version": "2.34.0",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "direnv": {
+                "version": "2.34.0"
+            }
+        }
+    }
+}

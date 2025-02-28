@@ -1,0 +1,59 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "tflint": {
+                "version": "0.55.0"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "tflint": {
+                "version": "0.55.0"
+            }
+        }
+    },
+    "alpine_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "tflint": {
+                "installFromGitHubRelease": true
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "tflint": {
+                "version": "0.51.1"
+            }
+        }
+    },
+    "alpine_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "tflint": {
+                "version": "0.55.0",
+                "installFromGitHubRelease": true
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "tflint": {
+                "version": "0.55.0"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "tflint": {
+                "version": "0.55.0"
+            }
+        }
+    }
+}

@@ -4,4 +4,12 @@
 fileignoreconfig:
   - filename: release-please-config.json
     checksum: a3b2bab5e2585704dbe934fba92ded9eae84161eca1c76a1789e31768e539163
+  - filename: src/google-cloud-cli/NOTES.md
+    checksum: c20570a873f9854f34c862401e55e5195c58e08b970b01402ee73414895bddaa
+  - filename: src/google-cloud-cli/README.md
+    checksum: e45d34b6b90ccc4ddebcad239e86071f6e0976b54b1f5caaf989d74b05b7e976
+  - filename: src/google-cloud-cli/install.sh
+    checksum: 1e0301546a33649acbe064727ca9af5340bc47c2eef52621abc206c638b2c9b6
+  - filename: src/opentofu/install.sh
+    checksum: 109361f36920d076c3dca3b0df2aef3aa9c16fa357803b56981a7a1760e92beb
 version: "1.0"
