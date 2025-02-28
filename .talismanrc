@@ -1,0 +1,5 @@
+# spell-checker: disable
+# yamllint disable rule:line-length
+---
+fileignoreconfig: []
+version: "1.0"
