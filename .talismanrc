@@ -1,5 +1,7 @@
 # spell-checker: disable
 # yamllint disable rule:line-length
 ---
-fileignoreconfig: []
+fileignoreconfig:
+  - filename: release-please-config.json
+    checksum: a3b2bab5e2585704dbe934fba92ded9eae84161eca1c76a1789e31768e539163
 version: "1.0"
