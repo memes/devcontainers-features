@@ -7,7 +7,7 @@ Installs Starship from GitHub Release or Alpine repository and adds it to the gl
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/starship:0": {}
+    "ghcr.io/memes/devcontainers-features/starship:1": {}
 }
 ```
 
@@ -48,4 +48,4 @@ deploy from package by **default**. All other OS's will trigger a pull from GitH
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/starship/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

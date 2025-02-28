@@ -7,7 +7,7 @@ Installs OpenTofu from distro repository or GitHub release and adds it to the gl
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/opentofu:0": {}
+    "ghcr.io/memes/devcontainers-features/opentofu:1": {}
 }
 ```
 
@@ -51,4 +51,4 @@ repo, the **default** install method is to download the latest release from Open
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/opentofu/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -7,7 +7,7 @@ Installs Talisman from GitHub release and adds it to the global PATH.
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/talisman:0": {}
+    "ghcr.io/memes/devcontainers-features/talisman:1": {}
 }
 ```
 
@@ -48,4 +48,4 @@ GitHub Release.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/talisman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
