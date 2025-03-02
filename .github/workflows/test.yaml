@@ -84,17 +84,14 @@ jobs:
 
   test-global:
     needs: changes
-    if: ${{ join(needs.changes.outputs.features) != '' }}
+    if: ${{ needs.changes.outputs.features != '[]' }}
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - name: "Debug"
-        run: |
-          echo "'${{ join(needs.changes.outputs.features) }}'"
-      # - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # - name: "Install latest devcontainer CLI"
-      #   run: npm install -g @devcontainers/cli
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
 
-      # - name: "Testing global scenarios"
-      #   run: devcontainer features test --global-scenarios-only
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only
