@@ -3,7 +3,6 @@
     "release-type": "simple",
     "bump-minor-pre-major": true,
     "bump-patch-for-minor-pre-major": false,
-    "skip-github-release": true,
     "bootstrap-sha": "7ab998b750ec906c17f912997fdfb637b8d3aac2",
     "packages": {
         "src/direnv": {

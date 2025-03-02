@@ -84,7 +84,7 @@ jobs:
 
   test-global:
     needs: changes
-    if: join(needs.changes.outputs.features) != ''
+    if: ${{ needs.changes.outputs.features != '[]' }}
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:

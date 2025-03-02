@@ -3,9 +3,12 @@ name: "Release dev container features & Generate Documentation"
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
-  deploy:
+  release:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     permissions:
@@ -13,19 +16,27 @@ jobs:
       pull-requests: write
       packages: write
     steps:
+      - name: Release Please
+        id: release_please
+        uses: GoogleCloudPlatform/release-please-action@v4.1.3
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
       - uses: actions/checkout@v4
-
+        if: ${{ fromJson(steps.release_please.outputs.releases_created) }}
       - name: "Publish Features"
+        if: ${{ fromJson(steps.release_please.outputs.releases_created) }}
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
-
+          disable-repo-tagging: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Create PR for Documentation
+        if: ${{ fromJson(steps.release_please.outputs.releases_created) }}
         id: push_image_info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
