@@ -7,7 +7,7 @@ Installs products from Hashicorp's published repository or release binary and ad
 
 ```json
 "features": {
-    "ghcr.io/memes/devcontainers-features/hashicorp:0": {}
+    "ghcr.io/memes/devcontainers-features/hashicorp:1": {}
 }
 ```
 
@@ -65,7 +65,8 @@ and `unzip` binaries.
 
 It has been tested and verified using the following images on ***amd64*** and ***arm64*** platforms:
 
-* `mcr.microsoft.com/devcontainers/base:alpine`
+* `mcr.microsoft.com/devcontainers/base:alpine` - NOTE: Feature will automatically install `libcap-setcap` to support
+  setting capabilities on Vault binary if Vault is installed
 * `mcr.microsoft.com/devcontainers/base:debian`
 * `mcr.microsoft.com/devcontainers/base:ubuntu`
 * `registry.fedoraproject.org/fedora:latest`
@@ -91,4 +92,4 @@ HashiCorp's releases site..
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/memes/devcontainers-features/blob/main/src/hashicorp/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
