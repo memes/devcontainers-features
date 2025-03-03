@@ -12,4 +12,6 @@ fileignoreconfig:
     checksum: 1e0301546a33649acbe064727ca9af5340bc47c2eef52621abc206c638b2c9b6
   - filename: src/opentofu/install.sh
     checksum: 109361f36920d076c3dca3b0df2aef3aa9c16fa357803b56981a7a1760e92beb
+  - filename: src/hashicorp/install.sh
+    checksum: cb4569cce0db06bec95d0033837442e80708dc2dfde948a7a3677085507a67b6
 version: "1.0"

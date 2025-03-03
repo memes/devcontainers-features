@@ -9,7 +9,12 @@
             "talisman": {},
             "terraform-docs": {},
             "terragrunt": {},
-            "tflint": {}
+            "tflint": {},
+            "hashicorp": {
+                "packer": "latest",
+                "terraform": "latest",
+                "vault": "latest"
+            }
         }
     }
 }
