@@ -25,6 +25,9 @@ jobs:
             google-cloud-cli:
               - 'src/google-cloud-cli/**'
               - 'test/google-cloud-cli/**'
+            hashicorp:
+              - 'src/hashicorp/**'
+              - 'test/hashicorp/**'
             opentofu:
               - 'src/opentofu/**'
               - 'test/opentofu/**'

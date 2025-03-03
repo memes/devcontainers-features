@@ -1,0 +1,48 @@
+{
+    "id": "hashicorp",
+    "name": "Hashicorp products",
+    "version": "0.0.1",
+    "description": "Installs products from Hashicorp's published repository or release binary and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/hashicorp",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "hashicorp",
+        "packer",
+        "terraform",
+        "vault"
+    ],
+    "options": {
+        "packer": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "",
+            "description": "The specific version of Hashicorp Packer to install, or 'latest'. If left blank (default) then packer will not be added to devcontainer."
+        },
+        "terraform": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "",
+            "description": "The specific version of Hashicorp Terraform to install, or 'latest'. If left blank (default) then terraform will not be added to devcontainer."
+        },
+        "vault": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "",
+            "description": "The specific version of Hashicorp Vault to install, or 'latest'. If left blank (default) then vault will not be added to devcontainer. NOTE: Vault requires that the devcontainer be run with IPC_LOCK capability set, see README."
+        },
+        "installBinaries": {
+            "type": "boolean",
+            "default": false,
+            "description": "When true, force installing binary releases from releases.hashicorp.com regardless of the default installation method."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

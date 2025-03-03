@@ -1,0 +1,458 @@
+{
+    "debian_packer_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "packer": "latest"
+            }
+        }
+    },
+    "debian_packer_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2"
+            }
+        }
+    },
+    "debian_packer_latest_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "packer": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "debian_packer_versioned_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2",
+                "installBinaries": true
+            }
+        }
+    },
+    "debian_terraform_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest"
+            }
+        }
+    },
+    "debian_terraform_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5"
+            }
+        }
+    },
+    "debian_terraform_latest_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "debian_terraform_versioned_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5",
+                "installBinaries": true
+            }
+        }
+    },
+    "debian_vault_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "vault": "latest"
+            }
+        }
+    },
+    "debian_vault_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4"
+            }
+        }
+    },
+    "debian_vault_latest_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "vault": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "debian_vault_versioned_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubuntu_packer_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "packer": "latest"
+            }
+        }
+    },
+    "ubuntu_packer_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2"
+            }
+        }
+    },
+    "ubuntu_packer_latest_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "packer": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubuntu_packer_versioned_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubuntu_terraform_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest"
+            }
+        }
+    },
+    "ubuntu_terraform_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5"
+            }
+        }
+    },
+    "ubuntu_terraform_latest_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubuntu_terraform_versioned_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubuntu_vault_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "vault": "latest"
+            }
+        }
+    },
+    "ubuntu_vault_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4"
+            }
+        }
+    },
+    "ubuntu_vault_latest_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "vault": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubuntu_vault_versioned_binary": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4",
+                "installBinaries": true
+            }
+        }
+    },
+    "alpine_packer_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "hashicorp": {
+                "packer": "latest"
+            }
+        }
+    },
+    "alpine_packer_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2"
+            }
+        }
+    },
+    "alpine_terraform_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest"
+            }
+        }
+    },
+    "alpine_terraform_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5"
+            }
+        }
+    },
+    "alpine_vault_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "hashicorp": {
+                "vault": "latest"
+            }
+        }
+    },
+    "alpine_vault_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4"
+            }
+        }
+    },
+    "fedora_packer_latest": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "latest"
+            }
+        }
+    },
+    "fedora_packer_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2"
+            }
+        }
+    },
+    "fedora_packer_latest_binary": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "fedora_packer_versioned_binary": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2",
+                "installBinaries": true
+            }
+        }
+    },
+    "fedora_terraform_latest": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest"
+            }
+        }
+    },
+    "fedora_terraform_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5"
+            }
+        }
+    },
+    "fedora_terraform_latest_binary": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "fedora_terraform_versioned_binary": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5",
+                "installBinaries": true
+            }
+        }
+    },
+    "fedora_vault_latest": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "latest"
+            }
+        }
+    },
+    "fedora_vault_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4"
+            }
+        }
+    },
+    "fedora_vault_latest_binary": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "fedora_vault_versioned_binary": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubi_packer_latest": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "latest"
+            }
+        }
+    },
+    "ubi_packer_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2"
+            }
+        }
+    },
+    "ubi_packer_latest_binary": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubi_packer_versioned_binary": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "packer": "1.11.2",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubi_terraform_latest": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest"
+            }
+        }
+    },
+    "ubi_terraform_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5"
+            }
+        }
+    },
+    "ubi_terraform_latest_binary": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubi_terraform_versioned_binary": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "terraform": "1.10.5",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubi_vault_latest": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "latest"
+            }
+        }
+    },
+    "ubi_vault_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4"
+            }
+        }
+    },
+    "ubi_vault_latest_binary": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "latest",
+                "installBinaries": true
+            }
+        }
+    },
+    "ubi_vault_versioned_binary": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "hashicorp": {
+                "vault": "1.18.4",
+                "installBinaries": true
+            }
+        }
+    }
+}
