@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 set -e
 
 # shellcheck disable=SC1091
-source dev-container-features-test-lib
+. alpine-features-test-lib.sh
 
 check "Verify a version of direnv is installed" direnv version
 check "Verify a version of gcloud is installed" sh -c "gcloud version | grep 'Google Cloud SDK'"
@@ -18,4 +18,5 @@ check "Verify a version of terraform is installed" terraform -version
 check "Verify a version of vault is installed" vault -version
 check "Verify a version of buf is installed" buf --version
 check "Verify a version of goreleaser is installed" goreleaser --version
+check "Verify a version of golangci-lint is installed" golangci-lint --version
 reportResults
