@@ -20,11 +20,11 @@ It has been tested and verified using the following images on ***amd64*** and **
 |Debian| &check; | &check; | Package |
 |Fedora| &check; | &check; | Package |
 |RedHat UBI9| &check; | &check; | Package |
-|Ubuntu| | &check; &check; | Package |
+|Ubuntu| &check; | &check; | Package |
 |*others*| | &check; | GitHub |
 
 For the tested [OS images](#os-support) for which a supporting repo containing `goreleaser` package the **default**
 installation method is to retrieve and install the latest *available* `goreleaser` package through `apt` or `dnf` tools.
 
 When the OS is unrecognised, or if it is Alpine, the **default** install method is to download the latest tarball from
-Google's servers.
+GitHub release.
