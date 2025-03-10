@@ -16,4 +16,5 @@ check "Verify a version of packer is installed" packer -version
 check "Verify a version of terraform is installed" terraform -version
 [ -f /usr/bin/vault ] && sudo setcap cap_ipc_lock=-ep /usr/bin/vault
 check "Verify a version of vault is installed" vault -version
+check "Verify a version of buf is installed" buf --version
 reportResults

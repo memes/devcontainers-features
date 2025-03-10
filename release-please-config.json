@@ -5,6 +5,16 @@
     "bump-patch-for-minor-pre-major": false,
     "bootstrap-sha": "7ab998b750ec906c17f912997fdfb637b8d3aac2",
     "packages": {
+        "src/buf": {
+            "component": "buf",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
         "src/direnv": {
             "component": "direnv",
             "extra-files": [
