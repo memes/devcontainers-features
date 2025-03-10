@@ -14,7 +14,8 @@
                 "packer": "latest",
                 "terraform": "latest",
                 "vault": "latest"
-            }
+            },
+            "buf": {}
         }
     }
 }
