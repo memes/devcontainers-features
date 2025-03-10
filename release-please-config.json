@@ -35,6 +35,16 @@
                 }
             ]
         },
+        "src/golangci-lint": {
+            "component": "golangci-lint",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
         "src/goreleaser": {
             "component": "goreleaser",
             "extra-files": [
