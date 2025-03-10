@@ -15,7 +15,8 @@
                 "terraform": "latest",
                 "vault": "latest"
             },
-            "buf": {}
+            "buf": {},
+            "goreleaser": {}
         }
     }
 }

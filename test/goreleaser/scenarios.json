@@ -1,0 +1,253 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1"
+            }
+        }
+    },
+    "debian_github": {
+        "image": "mcr.microsoft.com/devcontainers/python:3-bookworm",
+        "features": {
+            "goreleaser": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "debian_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/python:3-bookworm",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "debian_pro": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "goreleaser": {
+                "pro": "true"
+            }
+        }
+    },
+    "debian_versioned_pro": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true"
+            }
+        }
+    },
+    "debian_versioned_pro_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1"
+            }
+        }
+    },
+    "ubuntu_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "goreleaser": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubuntu_pro": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "goreleaser": {
+                "pro": "true"
+            }
+        }
+    },
+    "ubuntu_versioned_pro": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true"
+            }
+        }
+    },
+    "ubuntu_versioned_pro_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1"
+            }
+        }
+    },
+    "alpine_pro": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "goreleaser": {
+                "pro": "true"
+            }
+        }
+    },
+    "alpine_versioned_pro": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1"
+            }
+        }
+    },
+    "fedora_github": {
+        "image": "quay.io/fedora/python-312",
+        "features": {
+            "goreleaser": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_versioned_github": {
+        "image": "quay.io/fedora/python-312",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_pro": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "goreleaser": {
+                "pro": "true"
+            }
+        }
+    },
+    "fedora_versioned_pro": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true"
+            }
+        }
+    },
+    "fedora_pro_github": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "goreleaser": {
+                "pro": "true",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_versioned_pro_github": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1"
+            }
+        }
+    },
+    "ubi_github": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_versioned_github": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_pro": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "pro": "true"
+            }
+        }
+    },
+    "ubi_versioned_pro": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true"
+            }
+        }
+    },
+    "ubi_pro_github": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "pro": "true",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "ubi_versioned_pro_github": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "goreleaser": {
+                "version": "2.6.1",
+                "pro": "true",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    }
+}
