@@ -19,6 +19,9 @@ jobs:
         id: filter
         with:
           filters: |
+            buf:
+              - 'src/buf/**'
+              - 'test/buf/**'
             direnv:
               - 'src/direnv/**'
               - 'test/direnv/**'
