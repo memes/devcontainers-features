@@ -19,7 +19,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:alpine",
         "features": {
             "golangci-lint": {
-                "version": "1.64.5"
+                "version": "1.57.2"
             }
         }
     },
