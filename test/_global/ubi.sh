@@ -12,7 +12,7 @@ check "Verify a version of talisman is installed" talisman --version
 check "Verify a version of terraform-docs is installed" terraform-docs --version
 check "Verify a version of terragrunt is installed" terragrunt --version
 check "Verify a version of tflint is installed" tflint --version
-check "Verify a version of packer is installed" packer -version
+check "Verify a version of packer is installed" /usr/bin/packer -version
 check "Verify a version of terraform is installed" terraform -version
 [ -f /usr/bin/vault ] && sudo setcap cap_ipc_lock=-ep /usr/bin/vault
 check "Verify a version of vault is installed" vault -version
