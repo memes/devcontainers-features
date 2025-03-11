@@ -28,6 +28,12 @@ jobs:
             google-cloud-cli:
               - 'src/google-cloud-cli/**'
               - 'test/google-cloud-cli/**'
+            golangci-lint:
+              - 'src/golangci-lint/**'
+              - 'test/golangci-lint/**'
+            goreleaser:
+              - 'src/goreleaser/**'
+              - 'test/goreleaser/**'
             hashicorp:
               - 'src/hashicorp/**'
               - 'test/hashicorp/**'

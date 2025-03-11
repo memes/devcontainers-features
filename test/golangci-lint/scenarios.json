@@ -1,0 +1,59 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "golangci-lint": {
+                "version": "1.64.5"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "golangci-lint": {
+                "version": "1.64.5"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "golangci-lint": {
+                "version": "1.57.2"
+            }
+        }
+    },
+    "alpine_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "golangci-lint": {
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "alpine_versioned_github": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "golangci-lint": {
+                "version": "1.64.5",
+                "installFromGitHubRelease": "true"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "golangci-lint": {
+                "version": "1.64.5"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "golangci-lint": {
+                "version": "1.64.5"
+            }
+        }
+    }
+}

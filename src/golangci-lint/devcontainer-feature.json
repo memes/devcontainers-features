@@ -1,0 +1,30 @@
+{
+    "id": "golangci-lint",
+    "name": "golangci-lint",
+    "version": "0.0.1",
+    "description": "Installs golangci-lint and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/golangci-lint",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "buf",
+        "protobuf"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available release of golangci-lint. NOTE: If a version is provided and a matching release can not be found the feature will fail."
+        },
+        "installFromGitHubRelease": {
+            "type": "boolean",
+            "default": false,
+            "description": "When true, force pulling releases directly from published GitHub tarball regardless of the default installation method."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
