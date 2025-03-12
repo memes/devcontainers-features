@@ -8,7 +8,7 @@
         }
     },
     "debian_github": {
-        "image": "mcr.microsoft.com/devcontainers/python:3-bookworm",
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "goreleaser": {
                 "installFromGitHubRelease": "true"
@@ -16,7 +16,7 @@
         }
     },
     "debian_versioned_github": {
-        "image": "mcr.microsoft.com/devcontainers/python:3-bookworm",
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "goreleaser": {
                 "version": "2.6.1",
@@ -137,7 +137,7 @@
         }
     },
     "fedora_github": {
-        "image": "quay.io/fedora/python-312",
+        "image": "registry.fedoraproject.org/fedora:latest",
         "features": {
             "goreleaser": {
                 "installFromGitHubRelease": "true"
@@ -145,7 +145,7 @@
         }
     },
     "fedora_versioned_github": {
-        "image": "quay.io/fedora/python-312",
+        "image": "registry.fedoraproject.org/fedora:latest",
         "features": {
             "goreleaser": {
                 "version": "2.6.1",
