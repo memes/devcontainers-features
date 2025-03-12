@@ -63,7 +63,18 @@ install_from_github_release() {
         GORELEASER_VERSION="${GORELEASER_VERSION#v}"
         [ -z "${GORELEASER_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
-    curl -fsSL --retry 5 --retry-max-time 90 "https://github.com/goreleaser/${GORELEASER_TARGET}/releases/download/v${GORELEASER_VERSION}/${GORELEASER_TARGET}_Linux_$(uname -m).tar.gz" | \
+    case "$(uname -m)" in
+        aarch64)
+            goreleaser_platform=arm64
+            ;;
+        x86_64)
+            goreleaser_platform=x86_64
+            ;;
+        *)
+            error "Unhandled machine arch $(uname -m)"
+            ;;
+    esac
+    curl -fsSL --retry 5 --retry-max-time 90 "https://github.com/goreleaser/${GORELEASER_TARGET}/releases/download/v${GORELEASER_VERSION}/${GORELEASER_TARGET}_Linux_${goreleaser_platform}.tar.gz" | \
         tar xzf - -C /usr/local/bin goreleaser || \error "Failed to download ${GORELEASER_TARGET} v${GORELEASER_VERSION} tarball"
     chmod 0755 /usr/local/bin/goreleaser
 }
