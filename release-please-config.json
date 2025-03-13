@@ -75,6 +75,16 @@
                 }
             ]
         },
+        "src/sops": {
+            "component": "sops",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
         "src/starship": {
             "component": "starship",
             "extra-files": [

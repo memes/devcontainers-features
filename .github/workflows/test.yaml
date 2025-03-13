@@ -40,6 +40,9 @@ jobs:
             opentofu:
               - 'src/opentofu/**'
               - 'test/opentofu/**'
+            sops:
+              - 'src/sops/**'
+              - 'test/sops/**'
             starship:
               - 'src/starship/**'
               - 'test/starship/**'
