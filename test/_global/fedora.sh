@@ -20,4 +20,6 @@ check "Verify a version of buf is installed" buf --version
 check "Verify a version of goreleaser is installed" goreleaser --version
 check "Verify a version of golangci-lint is installed" golangci-lint --version
 check "Verify a version of sops is installed" sops --version
+check "Verify a version of age is installed " age --version
+check "Verify a version of GnuPG is installed " gpg --version
 reportResults

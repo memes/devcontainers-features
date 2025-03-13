@@ -10,5 +10,16 @@ else
 fi
 
 check "Verify a version of sops is installed" sops --version
+# shellcheck disable=SC1091
+. /etc/os-release
+case "${ID}" in
+    *rhel*)
+        check "Verify a version of age is NOT installed" sh -c '! age --version 2>/dev/null'
+        ;;
+    *)
+        check "Verify a version of age is installed " age --version
+        ;;
+esac
+check "Verify a version of GnuPG is installed " gpg --version
 
 reportResults

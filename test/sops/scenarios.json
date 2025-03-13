@@ -7,11 +7,45 @@
             }
         }
     },
+    "debian_without_age_gnupg": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "sops": {
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
+    "debian_versioned_without_age_gnupg": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "sops": {
+                "version": "3.9.3",
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
     "ubuntu_version": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "sops": {
                 "version": "3.9.3"
+            }
+        }
+    },
+    "ubuntu_without_age_gnupg": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "sops": {
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
+    "ubuntu_versioned_without_age_gnupg": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "sops": {
+                "version": "3.9.3",
+                "installAgeAndGnuPG": "false"
             }
         }
     },
@@ -23,6 +57,23 @@
             }
         }
     },
+    "alpine_without_age_gnupg": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "sops": {
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
+    "alpine_versioned_without_age_gnupg": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "sops": {
+                "version": "3.9.3",
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
     "fedora_version": {
         "image": "registry.fedoraproject.org/fedora:latest",
         "features": {
@@ -31,11 +82,45 @@
             }
         }
     },
+    "fedora_without_age_gnupg": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "sops": {
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
+    "fedora_versioned_without_age_gnupg": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "sops": {
+                "version": "3.9.3",
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
     "ubi_version": {
         "image": "registry.access.redhat.com/ubi9/ubi:latest",
         "features": {
             "sops": {
                 "version": "3.9.3"
+            }
+        }
+    },
+    "ubi_without_age_gnupg": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "sops": {
+                "installAgeAndGnuPG": "false"
+            }
+        }
+    },
+    "ubi_versioned_without_age_gnupg": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "sops": {
+                "version": "3.9.3",
+                "installAgeAndGnuPG": "false"
             }
         }
     }

@@ -12,6 +12,8 @@ case "${VERSION}" in
         ;;
 esac
 
+INSTALLAGEANDGNUPG="${INSTALLAGEANDGNUPG:-"true"}"
+
 error() {
     echo "ERROR: $*"
     exit 1
@@ -59,10 +61,23 @@ install_from_github() {
             ;;
     esac
     curl -fsSLo /usr/local/bin/sops --retry 5 --retry-max-time 90 "https://github.com/getsops/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.${sops_platform}" || \
-        error "Failed to download sops v${SOPS_VERSION} tarball"
+        error "Failed to download sops v${SOPS_VERSION} binary"
     chmod 0755 /usr/local/bin/sops
 }
 
 [ "$(id -u)" -eq 0 ] || error 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 
+case "${INSTALLAGEANDGNUPG}" in
+    true|TRUE)
+        # shellcheck disable=SC1091
+        . /etc/os-release
+        # Age is not packaged for RHEL
+        if [ "${ID}" != "rhel" ]; then
+            type age >/dev/null 2>/dev/null || prereqs age
+        fi
+        type gpg >/dev/null 2>/dev/null || prereqs gnupg2
+        ;;
+    *)
+        ;;
+esac
 install_from_github

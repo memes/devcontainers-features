@@ -10,7 +10,7 @@ It has been tested and verified using the following images on ***amd64*** and **
 * `mcr.microsoft.com/devcontainers/base:debian`
 * `mcr.microsoft.com/devcontainers/base:ubuntu`
 * `registry.fedoraproject.org/fedora:latest`
-* `registry.access.redhat.com/ubi9/ubi:latest`
+* `registry.access.redhat.com/ubi9/ubi:latest` NOTE: `age` package is not in standard RHEL repos and will not be installed by this feature
 
 ## Installation methods
 
@@ -23,4 +23,4 @@ It has been tested and verified using the following images on ***amd64*** and **
 |Ubuntu| | &check; | GitHub |
 |*others*| | &check; | GitHub |
 
-All installs will be from a GitHub release tarball.
+All installs will be from a GitHub release tarball, with `age` and `gnupg2` packages installed from standard repos.
