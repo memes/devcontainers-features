@@ -1,0 +1,27 @@
+{
+    "id": "vesctl",
+    "name": "vesctl",
+    "version": "0.0.1",
+    "description": "Installs vesctl from GitLab release and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/vesctl",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "vesctl",
+        "f5 distributed cloud",
+        "f5 xc",
+        "f5xc"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available GitLab release of vesctl. NOTE: If a version is provided and a matching GitHub Release can not be found the feature will fail."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

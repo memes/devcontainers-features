@@ -43,6 +43,8 @@
         "terragrunt",
         "TFDOCS",
         "tflint",
-        "USERPROFILE"
+        "USERPROFILE",
+        "vesctl",
+        "zcat"
     ]
 }

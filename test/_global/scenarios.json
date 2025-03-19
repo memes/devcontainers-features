@@ -18,7 +18,8 @@
             "buf": {},
             "goreleaser": {},
             "golangci-lint": {},
-            "sops": {}
+            "sops": {},
+            "vesctl": {}
         }
     },
     "ubuntu": {
@@ -40,7 +41,8 @@
             "buf": {},
             "goreleaser": {},
             "golangci-lint": {},
-            "sops": {}
+            "sops": {},
+            "vesctl": {}
         }
     },
     "alpine": {
@@ -62,7 +64,8 @@
             "buf": {},
             "goreleaser": {},
             "golangci-lint": {},
-            "sops": {}
+            "sops": {},
+            "vesctl": {}
         }
     },
     "fedora": {
@@ -84,7 +87,8 @@
             "buf": {},
             "goreleaser": {},
             "golangci-lint": {},
-            "sops": {}
+            "sops": {},
+            "vesctl": {}
         }
     },
     "ubi": {
@@ -106,7 +110,8 @@
             "buf": {},
             "goreleaser": {},
             "golangci-lint": {},
-            "sops": {}
+            "sops": {},
+            "vesctl": {}
         }
     }
 }
