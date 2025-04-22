@@ -25,6 +25,9 @@ jobs:
             direnv:
               - 'src/direnv/**'
               - 'test/direnv/**'
+            flux:
+              - 'src/flux/**'
+              - 'test/flux/**'
             google-cloud-cli:
               - 'src/google-cloud-cli/**'
               - 'test/google-cloud-cli/**'

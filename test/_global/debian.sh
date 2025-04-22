@@ -23,4 +23,5 @@ check "Verify a version of sops is installed" sops --version
 check "Verify a version of age is installed " age --version
 check "Verify a version of GnuPG is installed " gpg --version
 check "Verify a version of vesctl is installed " vesctl version
+check "Verify a version of flux is installed " flux version --client
 reportResults
