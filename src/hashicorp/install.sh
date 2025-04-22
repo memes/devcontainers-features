@@ -41,6 +41,8 @@ download_and_verify_zip() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type gpg >/dev/null 2>/dev/null || prereqs gnupg2
     type unzip >/dev/null 2>/dev/null || prereqs unzip
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type gpg >/dev/null 2>/dev/null || error "gpg is missing"
     type unzip >/dev/null 2>/dev/null || error "unzip is missing"

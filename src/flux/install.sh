@@ -42,6 +42,8 @@ prereqs() {
 install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type tar >/dev/null 2>/dev/null || prereqs tar
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     if [ -z "${FLUX_VERSION}" ]; then

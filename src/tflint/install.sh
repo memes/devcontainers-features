@@ -44,6 +44,8 @@ prereqs() {
 install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type unzip >/dev/null 2>/dev/null || prereqs unzip
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type unzip >/dev/null 2>/dev/null || error "unzip is missing"
     if [ -z "${TFLINT_VERSION}" ]; then
