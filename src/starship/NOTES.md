@@ -22,5 +22,6 @@ It has been tested and verified using the following images on ***amd64*** and **
 |Ubuntu| | &check; | GitHub |
 |*others*| | &check; | GitHub |
 
-At the time of publishing, only Alpine had a packaged `starship` binary in their pubic repo and so only Alpine will
-deploy from package by **default**. All other OS's will trigger a pull from GitHub Release.
+For the tested [OS images](#os-support) that have `starship` in their public package repo(s) the **default**
+installation method is to retrieve and install the latest *available* `starship` package through `apk`. If a version is
+requested, the installer will always retrieve from GitHub.

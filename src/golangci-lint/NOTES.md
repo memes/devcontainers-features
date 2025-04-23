@@ -23,5 +23,6 @@ It has been tested and verified using the following images on ***amd64*** and **
 |Ubuntu| | &check; | GitHub |
 |*others*| | &check; | GitHub |
 
-For almost all scenarios the default and only installation method is to install from GitHub release. Alpine does have a
-useable package but it is old unless the community edge repo is added.
+For the tested [OS images](#os-support) that have `golangci-lint` in their public package repo(s) the **default**
+installation method is to retrieve and install the latest *available* `direnv` package through `apk`. If a version is
+requested, the installer will always retrieve from GitHub.

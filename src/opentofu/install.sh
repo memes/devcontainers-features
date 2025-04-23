@@ -126,7 +126,7 @@ EOF
 
 [ "$(id -u)" -eq 0 ] || error 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 
-if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ]; then
+if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ] || [ -n "${TOFU_VERSION}" ]; then
     install_from_github
 else
     # shellcheck disable=SC1091
