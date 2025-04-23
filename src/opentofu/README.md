@@ -43,7 +43,8 @@ It has been tested and verified using the following images on ***amd64*** and **
 |*others*| | &check; | GitHub |
 
 For the tested [OS images](#os-support) that have `tofu` or `opentofu` in their public package repo(s) the **default**
-installation method is to retrieve and install the latest *available* package through `apk`, `apt`, or `dnf` tools.
+installation method is to retrieve and install the latest *available* `tofu` or `opentofu` package through `apk`, `apt`,
+or `dnf` tools. If a version is requested, the installer will always retrieve from GitHub.
 
 When the OS is unrecognised, or for tested [OS images](#os-support) that do not have `tofu` or `opentofu` in a public
 repo, the **default** install method is to download the latest release from OpenTofu's GitHub page.
