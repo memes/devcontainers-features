@@ -21,3 +21,6 @@ It has been tested and verified using the following images on ***amd64*** and **
 |RedHat UBI9| | &check; | GitHub |
 |Ubuntu| | &check; | GitHub |
 |*others*| | &check; | GitHub |
+
+At the time of publishing, no tested distro has `tflint` in their pubic repo; all installations will be a pull
+from GitHub Release.
