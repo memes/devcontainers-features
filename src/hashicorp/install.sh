@@ -240,7 +240,7 @@ else
     # shellcheck disable=SC1091
     . /etc/os-release
     case "${ID}" in
-        *rhel*|*fedora*)
+        *rhel*)
             install_rpm
             ;;
         *debian*|*ubuntu*)
