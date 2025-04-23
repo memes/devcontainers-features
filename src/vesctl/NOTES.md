@@ -22,3 +22,6 @@ It has been tested and verified using the following images on ***amd64*** and **
 |RedHat UBI9| | &check; | GitLab |
 |Ubuntu| | &check; | GitLab |
 |*others*| | &check; | GitLab |
+
+At the time of publishing, no tested distro has `vesctl` in their pubic repo; all installations will be a pull
+from GitLab.
