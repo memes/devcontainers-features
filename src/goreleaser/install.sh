@@ -44,6 +44,8 @@ prereqs() {
 install_from_github_release() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type tar >/dev/null 2>/dev/null || prereqs tar
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
 
@@ -115,7 +117,7 @@ EOF
 
 [ "$(id -u)" -eq 0 ] || error 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 
-if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ]; then
+if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ] || [ -n "${GORELEASER_VERSION}" ]; then
     install_from_github_release
 else
     # shellcheck disable=SC1091

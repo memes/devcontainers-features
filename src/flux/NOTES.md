@@ -16,13 +16,9 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 | |Distro package|GitHub Release|Default|
 |-|----|--------------|-------|
-|Alpine| &check; | &check; | Package |
+|Alpine| | &check; | GitHub |
 |Debian| | &check; | GitHub |
 |Fedora| | &check; | GitHub |
 |RedHat UBI9| | &check; | GitHub |
 |Ubuntu| | &check; | GitHub |
 |*others*| | &check; | GitHub |
-
-For the tested [OS images](#os-support) that have `golangci-lint` in their public package repo(s) the **default**
-installation method is to retrieve and install the latest *available* `direnv` package through `apk`. If a version is
-requested, the installer will always retrieve from GitHub.

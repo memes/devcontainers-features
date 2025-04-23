@@ -44,6 +44,8 @@ prereqs() {
 
 install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     if [ -z "${DIRENV_VERSION}" ]; then
         DIRENV_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/direnv/direnv/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
@@ -87,7 +89,7 @@ install_rpm() {
 
 [ "$(id -u)" -eq 0 ] || error 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 
-if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ]; then
+if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ] || [ -n "${DIRENV_VERSION}" ]; then
     install_from_github
 else
     # shellcheck disable=SC1091

@@ -41,6 +41,8 @@ prereqs() {
 
 install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     if [ -z "${TALISMAN_VERSION}" ]; then
         TALISMAN_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/thoughtworks/talisman/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"

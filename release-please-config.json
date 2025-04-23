@@ -25,6 +25,16 @@
                 }
             ]
         },
+        "src/flux": {
+            "component": "flux",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
         "src/google-cloud-cli": {
             "component": "google-cloud-cli",
             "extra-files": [

@@ -1,0 +1,26 @@
+{
+    "id": "flux",
+    "name": "flux",
+    "version": "0.0.1",
+    "description": "Installs flux2 cli from GitHub release tarball and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/flux",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "flux",
+        "flux2",
+        "fluxcd"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available GitHub release of flux. NOTE: If a version is provided and a matching GitHub Release can not be found the feature will fail."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

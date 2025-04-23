@@ -12,8 +12,6 @@ case "${VERSION}" in
         ;;
 esac
 
-INSTALLFROMGITHUBRELEASE="${INSTALLFROMGITHUBRELEASE:-"false"}"
-
 error() {
     echo "ERROR: $*"
     exit 1
@@ -44,6 +42,8 @@ prereqs() {
 install_from_github() {
     type curl >/dev/null 2>/dev/null || prereqs curl
     type unzip >/dev/null 2>/dev/null || prereqs unzip
+    type awk >/dev/null 2>/dev/null || prereqs gawk
+    type awk >/dev/null 2>/dev/null || error "awk is missing"
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type unzip >/dev/null 2>/dev/null || error "unzip is missing"
     if [ -z "${TFLINT_VERSION}" ]; then
@@ -72,24 +72,6 @@ install_from_github() {
     chmod 0755 /usr/local/bin/tflint
 }
 
-install_apk() {
-    apk --no-cache add "tflint${TFLINT_VERSION:+"=~${TFLINT_VERSION}"}" || \
-        error "Failed to install tflint${TFLINT_VERSION:+"=~${TFLINT_VERSION}"} from repo"
-}
-
 [ "$(id -u)" -eq 0 ] || error 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 
-if [ "${INSTALLFROMGITHUBRELEASE}" = "true" ]; then
-    install_from_github
-else
-    # shellcheck disable=SC1091
-    . /etc/os-release
-    case "${ID}" in
-        *alpine*)
-            install_apk
-            ;;
-        *)
-            install_from_github
-            ;;
-    esac
-fi
+install_from_github
