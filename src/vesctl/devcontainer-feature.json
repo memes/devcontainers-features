@@ -1,7 +1,7 @@
 {
     "id": "vesctl",
     "name": "vesctl",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Installs vesctl from GitLab release and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/vesctl",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",

@@ -1,7 +1,7 @@
 {
     "id": "talisman",
     "name": "talisman",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Installs Talisman from GitHub release and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/talisman",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
