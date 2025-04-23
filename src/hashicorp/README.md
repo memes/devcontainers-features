@@ -78,16 +78,17 @@ It has been tested and verified using the following images on ***amd64*** and **
 |-|----|--------------|-------|
 |Alpine| | &check; | Binary |
 |Debian| &check; | &check; | Package |
-|Fedora| &check; | &check; | Package |
+|Fedora| | &check; | Package |
 |RedHat UBI9| &check; | &check; | Package |
 |Ubuntu| &check; | &check; | Package |
 |*others*| | &check; | Binary |
 
-For the tested [OS images](#os-support) for which HashiCorp has created a supporting repo the **default** installation
-method is to retrieve and install the latest packages through `apt` or `dnf` tools.
+For the tested [OS images](#os-support) that have `goreleaser` in their public package repo(s) the **default**
+installation method is to retrieve and install the latest *available* `goreleaser` package through `apt`, or `dnf`
+tools. If a version is requested, the installer will always retrieve from GitHub.
 
-When the OS is unrecognised, or if it is Alpine, the **default** install method is to download the latest binary from
-HashiCorp's releases site..
+When the OS is unrecognised, or if it is Alpine or Fedora, the **default** install method is to download the latest
+binary from HashiCorp's releases site..
 
 
 ---

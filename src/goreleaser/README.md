@@ -44,8 +44,9 @@ It has been tested and verified using the following images on ***amd64*** and **
 |Ubuntu| &check; | &check; | Package |
 |*others*| | &check; | GitHub |
 
-For the tested [OS images](#os-support) for which a supporting repo containing `goreleaser` package the **default**
-installation method is to retrieve and install the latest *available* `goreleaser` package through `apt` or `dnf` tools.
+For the tested [OS images](#os-support) that have `goreleaser` in their public package repo(s) the **default**
+installation method is to retrieve and install the latest *available* `goreleaser` package through `apt`, or `dnf`
+tools. If a version is requested, the installer will always retrieve from GitHub.
 
 When the OS is unrecognised, or if it is Alpine, the **default** install method is to download the latest tarball from
 GitHub release.

@@ -36,7 +36,7 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 | |Distro package|GitHub Release|Default|
 |-|----|--------------|-------|
-|Alpine| &check; | &check; | Package |
+|Alpine| &check;| &check; | Package |
 |Debian| &check; | &check; | Package |
 |Fedora| &check; | &check; | Package |
 |RedHat UBI9| | &check; | GitHub |
@@ -44,7 +44,8 @@ It has been tested and verified using the following images on ***amd64*** and **
 |*others*| | &check; | GitHub |
 
 For the tested [OS images](#os-support) that have `direnv` in their public package repo(s) the **default** installation
-method is to retrieve and install the latest *available* `direnv` package through `apk`, `apt`, or `dnf` tools.
+method is to retrieve and install the latest *available* `direnv` package through `apk`, `apt`, or `dnf` tools. If a
+version is requested, the installer will always retrieve from GitHub.
 
 When the OS is unrecognised, or for tested [OS images](#os-support) that do not have `direnv` in a public repo, the
 **default** install method is to download the latest release from `direnv`'s GitHub page.
