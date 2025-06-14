@@ -7,8 +7,8 @@ error() {
     exit 1
 }
 
-features="$(find src -maxdepth 1 -mindepth 1 -printf '%f ')"
-images="mcr.microsoft.com/devcontainers/base:debian mcr.microsoft.com/devcontainers/base:ubuntu mcr.microsoft.com/devcontainers/base:alpine registry.fedoraproject.org/fedora:latest registry.access.redhat.com/ubi9/ubi:latest"
+features="${features:-"$(find src -maxdepth 1 -mindepth 1 -printf '%f ')"}"
+images="${images:-"mcr.microsoft.com/devcontainers/base:debian mcr.microsoft.com/devcontainers/base:ubuntu mcr.microsoft.com/devcontainers/base:alpine registry.fedoraproject.org/fedora:latest registry.access.redhat.com/ubi9/ubi:latest"}"
 
 devcontainer features test --global-scenarios-only || \
     error "Global scenarios failed: exit code: $?"

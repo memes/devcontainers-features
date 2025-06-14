@@ -20,7 +20,8 @@
             "golangci-lint": {},
             "sops": {},
             "vesctl": {},
-            "flux": {}
+            "flux": {},
+            "hadolint": {}
         }
     },
     "ubuntu": {
@@ -44,7 +45,8 @@
             "golangci-lint": {},
             "sops": {},
             "vesctl": {},
-            "flux": {}
+            "flux": {},
+            "hadolint": {}
         }
     },
     "alpine": {
@@ -68,7 +70,8 @@
             "golangci-lint": {},
             "sops": {},
             "vesctl": {},
-            "flux": {}
+            "flux": {},
+            "hadolint": {}
         }
     },
     "fedora": {
@@ -92,7 +95,8 @@
             "golangci-lint": {},
             "sops": {},
             "vesctl": {},
-            "flux": {}
+            "flux": {},
+            "hadolint": {}
         }
     },
     "ubi": {
@@ -116,7 +120,8 @@
             "golangci-lint": {},
             "sops": {},
             "vesctl": {},
-            "flux": {}
+            "flux": {},
+            "hadolint": {}
         }
     }
 }

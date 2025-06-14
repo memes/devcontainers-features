@@ -40,6 +40,9 @@ jobs:
             hashicorp:
               - 'src/hashicorp/**'
               - 'test/hashicorp/**'
+            hadolint:
+              - 'src/hadolint/**'
+              - 'test/hadolint/**'
             opentofu:
               - 'src/opentofu/**'
               - 'test/opentofu/**'
