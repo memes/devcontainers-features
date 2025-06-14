@@ -75,6 +75,16 @@
                 }
             ]
         },
+        "src/hadolint": {
+            "component": "hadolint",
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "devcontainer-feature.json",
+                    "jsonpath": "$.version"
+                }
+            ]
+        },
         "src/opentofu": {
             "component": "opentofu",
             "extra-files": [
