@@ -1,7 +1,7 @@
 {
     "id": "hadolint",
     "name": "hadolint",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Installs hadolint binary from GitHub and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/hadolint",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
