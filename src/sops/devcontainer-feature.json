@@ -1,7 +1,7 @@
 {
     "id": "sops",
     "name": "sops",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Installs sops binary from GitHub release tarball and adds it to the global PATH. Supporting packages age and GnuPG will be added to the container if not already present.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/sops",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",

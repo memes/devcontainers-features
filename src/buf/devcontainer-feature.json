@@ -1,7 +1,7 @@
 {
     "id": "buf",
     "name": "buf",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Installs buf and supporting files from GitHub release tarball and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/buf",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",

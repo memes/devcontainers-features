@@ -1,7 +1,7 @@
 {
     "id": "google-cloud-cli",
     "name": "Google Cloud SDK CLI",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Installs Google Cloud SDK CLI from distro repository or published tarball and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/google-cloud-cli",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
