@@ -21,7 +21,8 @@
             "sops": {},
             "vesctl": {},
             "flux": {},
-            "hadolint": {}
+            "hadolint": {},
+            "gcrane": {}
         }
     },
     "ubuntu": {
@@ -46,7 +47,8 @@
             "sops": {},
             "vesctl": {},
             "flux": {},
-            "hadolint": {}
+            "hadolint": {},
+            "gcrane": {}
         }
     },
     "alpine": {
@@ -71,7 +73,8 @@
             "sops": {},
             "vesctl": {},
             "flux": {},
-            "hadolint": {}
+            "hadolint": {},
+            "gcrane": {}
         }
     },
     "fedora": {
@@ -96,7 +99,8 @@
             "sops": {},
             "vesctl": {},
             "flux": {},
-            "hadolint": {}
+            "hadolint": {},
+            "gcrane": {}
         }
     },
     "ubi": {
@@ -121,7 +125,8 @@
             "sops": {},
             "vesctl": {},
             "flux": {},
-            "hadolint": {}
+            "hadolint": {},
+            "gcrane": {}
         }
     }
 }

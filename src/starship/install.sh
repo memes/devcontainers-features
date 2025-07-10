@@ -49,7 +49,7 @@ install_from_github() {
     type curl >/dev/null 2>/dev/null || error "curl is missing"
     type tar >/dev/null 2>/dev/null || error "tar is missing"
     if [ -z "${STARSHIP_VERSION}" ]; then
-        STARSHIP_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/starship/starship/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        STARSHIP_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 ${GITHUB_TOKEN:+"-H 'Authorization: Bearer ${GITHUB_TOKEN}'"} -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/starship/starship/releases/latest 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         STARSHIP_VERSION="${STARSHIP_VERSION#v}"
         [ -z "${STARSHIP_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
