@@ -6,6 +6,6 @@ source dev-container-features-test-lib
 
 check "Verify a version of packer is not installed" test ! -f /usr/bin/local/packer -a ! -f /usr/bin/packer
 check "Verify a version of terraform is not installed" test ! -f /usr/bin/local/terraform -a ! -f /usr/bin/terraform
-[ -f /usr/bin/vault ] && sudo setcap cap_ipc_lock=-ep /usr/bin/vault
+[ -f /usr/local/bin/vault ] && sudo setcap cap_ipc_lock=-ep /usr/local/bin/vault
 check "Verify a version of vault is installed" sh -c 'vault -version | grep 1.18.4'
 reportResults
