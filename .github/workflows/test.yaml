@@ -2,9 +2,10 @@
 name: "CI - Test Features"
 # yamllint disable-line rule:truthy
 on:
-  push:
-    branches:
-      - main
+  # TODO @memes - re-enable on push to main if force pushes need to be allowed
+  # push:
+  #   branches:
+  #     - main
   pull_request:
   workflow_dispatch:
 
