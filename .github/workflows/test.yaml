@@ -28,6 +28,9 @@ jobs:
             flux:
               - 'src/flux/**'
               - 'test/flux/**'
+            gcrane:
+              - 'src/gcrane/**'
+              - 'test/gcrane/**'
             google-cloud-cli:
               - 'src/google-cloud-cli/**'
               - 'test/google-cloud-cli/**'

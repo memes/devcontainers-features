@@ -27,4 +27,6 @@ check "Verify a version of GnuPG is installed " gpg --version
 check "Verify a version of vesctl is installed " vesctl version
 check "Verify a version of flux is installed " flux version --client
 check "Verify a version of hadolint is installed " hadolint --version
+check "Verify a version of gcrane is installed " gcrane version
+
 reportResults
