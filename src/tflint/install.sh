@@ -25,7 +25,7 @@ prereqs() {
             apk --no-cache add "$@" || error "Failed to install apks for $*"
             ;;
         *rhel*|*fedora*)
-            dnf install -y "$@" || error "Failed to install rpms for $*"
+            dnf install -y --setopt=install_weak_deps=False "$@" || error "Failed to install rpms for $*"
             rm -rf /var/cache/dnf/* /var/cache/yum/*
             ;;
         *debian*|*ubuntu*)
