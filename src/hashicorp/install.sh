@@ -51,7 +51,7 @@ download_and_verify_zip() {
     target_dir="$3"
 
     if [ "${hashi_version}" = "latest" ]; then
-        hashi_version="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/hashicorp/${hashi_product}/releases/latest" 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        hashi_version="$(curl -fsSL --retry 5 --retry-max-time 90 ${GITHUB_TOKEN:+"-H 'Authorization: Bearer ${GITHUB_TOKEN}'"} -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/hashicorp/${hashi_product}/releases/latest" 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         hashi_version="${hashi_version#v}"
         [ -z "${hashi_version}" ] && error "Failed to get latest ${hashi_product} version tag from GitHub"
     fi

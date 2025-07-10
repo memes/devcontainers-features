@@ -61,7 +61,7 @@ install_from_github_release() {
         esac
     fi
     if [ -z "${GORELEASER_VERSION}" ]; then
-        GORELEASER_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/goreleaser/${GORELEASER_TARGET}/releases/latest" 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
+        GORELEASER_VERSION="$(curl -fsSL --retry 5 --retry-max-time 90 ${GITHUB_TOKEN:+"-H 'Authorization: Bearer ${GITHUB_TOKEN}'"} -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/goreleaser/${GORELEASER_TARGET}/releases/latest" 2>/dev/null | awk -F\" '/tag_name/ {print $4}')"
         GORELEASER_VERSION="${GORELEASER_VERSION#v}"
         [ -z "${GORELEASER_VERSION}" ] && error "Failed to get latest version tag from GitHub"
     fi
