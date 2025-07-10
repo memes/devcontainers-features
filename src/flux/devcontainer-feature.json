@@ -1,7 +1,7 @@
 {
     "id": "flux",
     "name": "flux",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs flux2 cli from GitHub release tarball and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/flux",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",

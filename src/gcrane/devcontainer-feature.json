@@ -1,7 +1,7 @@
 {
     "id": "gcrane",
     "name": "gcrane",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Installs gcrane and related files from GitHub tarball and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/gcrane",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",

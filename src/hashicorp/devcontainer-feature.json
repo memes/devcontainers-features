@@ -1,7 +1,7 @@
 {
     "id": "hashicorp",
     "name": "Hashicorp products",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Installs products from Hashicorp's published repository or release binary and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/hashicorp",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
