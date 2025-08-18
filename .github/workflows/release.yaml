@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: ${{ fromJson(steps.release_please.outputs.releases_created) }}
       - name: "Publish Features"
         if: ${{ fromJson(steps.release_please.outputs.releases_created) }}
