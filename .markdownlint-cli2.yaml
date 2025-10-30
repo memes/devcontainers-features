@@ -1,10 +1,12 @@
 ---
 config:
   default: true
-  line-length:
-    line_length: 120
+  emphasis-style: false
+  line-length: false
+  no-multiple-blanks:
+    maximum: 2
 
 gitignore: true
 
 ignores:
-  - CHANGELOG.md
+  - src/*/CHANGELOG.md
