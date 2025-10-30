@@ -17,17 +17,17 @@
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/memes/devcontainers-features/direnv:1": {},
-        "ghcr.io/memes/devcontainers-features/talisman:1": {
-            "version": "1.32.0"
-        },
+        "ghcr.io/memes/devcontainers-features/talisman:1": {},
         "ghcr.io/memes/devcontainers-features/starship:1": {}
     },
     "containerUser": "node",
     "onCreateCommand": {
-        "pre-commit": "sudo sh -c 'apt update && apt install -y --no-install-recommends pipx && rm -rf /var/lib/apt/lists/*' && pipx install pre-commit"
+        "install-deps": "sudo sh -c 'apt update && apt install -y --no-install-recommends pipx && rm -rf /var/lib/apt/lists/*'"
+    },
+    "postCreateCommand": {
+        "pre-commit": "pipx install pre-commit && pre-commit install --hook-type commit-msg --hook-type pre-commit"
     },
     "updateContentCommand": {
-        "devcontainers-cli": "npm install -g @devcontainers/cli",
-        "pre-commit": "pre-commit install --hook-type commit-msg --hook-type pre-commit"
+        "devcontainers-cli": "npm install -g @devcontainers/cli"
     }
 }

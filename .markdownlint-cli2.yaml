@@ -1,0 +1,13 @@
+---
+config:
+  default: true
+  emphasis-style: false
+  line-length: false
+  no-inline-html: false
+  no-multiple-blanks:
+    maximum: 2
+
+gitignore: true
+
+ignores:
+  - src/*/CHANGELOG.md
