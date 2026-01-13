@@ -1,7 +1,7 @@
 {
     "id": "grpcurl",
     "name": "grpcurl",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Installs gRPCurl from GitHub tarball and adds it to the global PATH.",
     "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/grpcurl",
     "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
