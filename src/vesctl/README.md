@@ -33,7 +33,7 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|GitLab Release|Default|
+| | Distro package | GitLab Release | Default |
 | - | ---- | -------------- | ------- |
 | Alpine | | &check; | GitLab |
 | Debian | | &check; | GitLab |
