@@ -1,0 +1,42 @@
+{
+    "debian_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "grpcurl": {
+                "version": "1.9.2"
+            }
+        }
+    },
+    "ubuntu_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "grpcurl": {
+                "version": "1.9.2"
+            }
+        }
+    },
+    "alpine_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "grpcurl": {
+                "version": "1.9.2"
+            }
+        }
+    },
+    "fedora_version": {
+        "image": "registry.fedoraproject.org/fedora:latest",
+        "features": {
+            "grpcurl": {
+                "version": "1.9.2"
+            }
+        }
+    },
+    "ubi_version": {
+        "image": "registry.access.redhat.com/ubi9/ubi:latest",
+        "features": {
+            "grpcurl": {
+                "version": "1.9.2"
+            }
+        }
+    }
+}

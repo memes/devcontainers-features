@@ -31,6 +31,9 @@ jobs:
             gcrane:
               - 'src/gcrane/install.sh'
               - 'test/gcrane/**'
+            grpcurl:
+              - 'src/grpcurl/install.sh'
+              - 'test/grpcurl/**'
             google-cloud-cli:
               - 'src/google-cloud-cli/install.sh'
               - 'test/google-cloud-cli/**'

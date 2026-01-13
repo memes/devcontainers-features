@@ -22,6 +22,7 @@
         "goreleaser",
         "gpgcheck",
         "gpgkey",
+        "grpcurl",
         "Gruntfuggly",
         "hashi",
         "INSTALLAGEANDGNUPG",
