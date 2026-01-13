@@ -34,13 +34,13 @@ It has been tested and verified using the following images on ***amd64*** and **
 ## Installation methods
 
 | |Distro package|GitLab Release|Default|
-|-|----|--------------|-------|
-|Alpine| | &check; | GitLab |
-|Debian| | &check; | GitLab |
-|Fedora| | &check; | GitLab |
-|RedHat UBI9| | &check; | GitLab |
-|Ubuntu| | &check; | GitLab |
-|*others*| | &check; | GitLab |
+| - | ---- | -------------- | ------- |
+| Alpine | | &check; | GitLab |
+| Debian | | &check; | GitLab |
+| Fedora | | &check; | GitLab |
+| RedHat UBI9 | | &check; | GitLab |
+| Ubuntu | | &check; | GitLab |
+| *others* | | &check; | GitLab |
 
 At the time of publishing, no tested distro has `vesctl` in their pubic repo; all installations will be a pull
 from GitLab.

@@ -74,14 +74,14 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|Release Binary|Default|
-|-|----|--------------|-------|
-|Alpine| | &check; | Binary |
-|Debian| &check; | &check; | Package |
-|Fedora| | &check; | Package |
-|RedHat UBI9| &check; | &check; | Package |
-|Ubuntu| &check; | &check; | Package |
-|*others*| | &check; | Binary |
+| | Distro package | Release Binary | Default |
+| - | ---- | -------------- | ------- |
+| Alpine | | &check; | Binary |
+| Debian | &check; | &check; | Package |
+| Fedora | | &check; | Package |
+| RedHat UBI9 | &check; | &check; | Package |
+| Ubuntu | &check; | &check; | Package |
+| *others* | | &check; | Binary |
 
 For the tested [OS images](#os-support) that have `goreleaser` in their public package repo(s) the **default**
 installation method is to retrieve and install the latest *available* `goreleaser` package through `apt`, or `dnf`

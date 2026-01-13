@@ -13,14 +13,14 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|GitHub Release|Default|
-|-|----|--------------|-------|
-|Alpine| &check; | &check; | Package |
-|Debian| | &check; | GitHub |
-|Fedora| | &check; | GitHub |
-|RedHat UBI9| | &check; | GitHub |
-|Ubuntu| | &check; | GitHub |
-|*others*| | &check; | GitHub |
+| | Distro package | GitHub Release | Default |
+| - | ---- | -------------- | ------- |
+| Alpine | &check; | &check; | Package |
+| Debian | | &check; | GitHub |
+| Fedora | | &check; | GitHub |
+| RedHat UBI9 | | &check; | GitHub |
+| Ubuntu | | &check; | GitHub |
+| *others* | | &check; | GitHub |
 
 For the tested [OS images](#os-support) that have `starship` in their public package repo(s) the **default**
 installation method is to retrieve and install the latest *available* `starship` package through `apk`. If a version is
