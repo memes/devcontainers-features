@@ -14,14 +14,14 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|GitHub Release|Default|
-|-|----|--------------|-------|
-|Alpine| | &check; | GitHub |
-|Debian| &check; | &check; | Package |
-|Fedora| &check; | &check; | Package |
-|RedHat UBI9| &check; | &check; | Package |
-|Ubuntu| &check; | &check; | Package |
-|*others*| | &check; | GitHub |
+| | Distro package | GitHub Release | Default |
+| - | ---- | -------------- | ------- |
+| Alpine | | &check; | GitHub |
+| Debian | &check; | &check; | Package |
+| Fedora | &check; | &check; | Package |
+| RedHat UBI9 | &check; | &check; | Package |
+| Ubuntu | &check; | &check; | Package |
+| *others* | | &check; | GitHub |
 
 For the tested [OS images](#os-support) that have `goreleaser` in their public package repo(s) the **default**
 installation method is to retrieve and install the latest *available* `goreleaser` package through `apt`, or `dnf`

@@ -33,14 +33,14 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|GitHub Release|Default|
-|-|----|--------------|-------|
-|Alpine| | &check; | Package |
-|Debian| | &check; | GitHub |
-|Fedora| | &check; | GitHub |
-|RedHat UBI9| | &check; | GitHub |
-|Ubuntu| | &check; | GitHub |
-|*others*| | &check; | GitHub |
+| | Distro package | GitHub Release | Default |
+| - | ---- | -------------- | ------- |
+| Alpine | | &check; | Package |
+| Debian | | &check; | GitHub |
+| Fedora | | &check; | GitHub |
+| RedHat UBI9 | | &check; | GitHub |
+| Ubuntu | | &check; | GitHub |
+| *others* | | &check; | GitHub |
 
 At the time of publishing, no tested distro has `tflint` in their pubic repo; all installations will be a pull
 from GitHub Release.

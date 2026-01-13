@@ -63,14 +63,14 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|Tarball|Default|
-|-|----|--------------|-------|
-|Alpine| | &check; | Tarball |
-|Debian| &check; | &check; | Package |
-|Fedora| &check; | &check; | Package |
-|RedHat UBI9| &check; | &check; | Package |
-|Ubuntu| &check; | &check; | Package |
-|*others*| | &check; | Tarball |
+| | Distro package | Tarball | Default |
+| - | ---- | -------------- | ------- |
+| Alpine | | &check; | Tarball |
+| Debian | &check; | &check; | Package |
+| Fedora | &check; | &check; | Package |
+| RedHat UBI9 | &check; | &check; | Package |
+| Ubuntu | &check; | &check; | Package |
+| *others* | | &check; | Tarball |
 
 For the tested [OS images](#os-support) for which Google has created a supporting repo containing `gcloud` component
 packages the **default** installation method is to retrieve and install the latest *available* `gcloud` and *components*

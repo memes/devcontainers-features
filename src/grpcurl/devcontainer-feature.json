@@ -1,0 +1,25 @@
+{
+    "id": "grpcurl",
+    "name": "grpcurl",
+    "version": "0.0.1",
+    "description": "Installs gRPCurl from GitHub tarball and adds it to the global PATH.",
+    "documentationURL": "https://github.com/memes/devcontainers-features/tree/main/src/grpcurl",
+    "licenseURL": "https://github.com/memes/devcontainers-features/tree/main/LICENSE",
+    "keywords": [
+        "grpcurl",
+        "grpc"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "The specific version to install; default value is 'latest' which will install the most recent available GitHub release of grpcurl. NOTE: If a version is provided and a matching GitHub Release can not be found the feature will fail."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

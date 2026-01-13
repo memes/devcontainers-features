@@ -11,3 +11,4 @@ gitignore: true
 
 ignores:
   - src/*/CHANGELOG.md
+  - src/*/README.md

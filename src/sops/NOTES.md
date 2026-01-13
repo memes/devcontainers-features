@@ -14,13 +14,13 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 ## Installation methods
 
-| |Distro package|GitHub Release|Default|
-|-|----|--------------|-------|
-|Alpine| | &check; | GitHub |
-|Debian| | &check; | GitHub |
-|Fedora| | &check; | GitHub |
-|RedHat UBI9| | &check; | GitHub |
-|Ubuntu| | &check; | GitHub |
-|*others*| | &check; | GitHub |
+| | Distro package | GitHub Release | Default |
+| - | ---- | -------------- | ------- |
+| Alpine | | &check; | GitHub |
+| Debian | | &check; | GitHub |
+| Fedora | | &check; | GitHub |
+| RedHat UBI9 | | &check; | GitHub |
+| Ubuntu | | &check; | GitHub |
+| *others* | | &check; | GitHub |
 
 All installs will be from a GitHub release tarball, with `age` and `gnupg2` packages installed from standard repos.
