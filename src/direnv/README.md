@@ -36,7 +36,7 @@ It has been tested and verified using the following images on ***amd64*** and **
 
 | | Distro package | GitHub Release | Default |
 | - | ---- | -------------- | ------- |
-| Alpine | &check;| &check; | Package |
+| Alpine | &check; | &check; | Package |
 | Debian | &check; | &check; | Package |
 | Fedora | &check; | &check; | Package |
 | RedHat UBI9 | | &check; | GitHub |
