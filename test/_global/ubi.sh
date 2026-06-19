@@ -8,7 +8,6 @@ source dev-container-features-test-lib
 
 check "Verify a version of gcloud is installed" sh -c "gcloud version | grep 'Google Cloud SDK'"
 check "Verify a version of talisman is installed" talisman --version
-check "Verify a version of terraform-docs is installed" terraform-docs --version
 check "Verify a version of terragrunt is installed" terragrunt --version
 check "Verify a version of tflint is installed" tflint --version
 check "Verify a version of packer is installed" /usr/bin/packer -version

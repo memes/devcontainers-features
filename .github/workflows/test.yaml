@@ -46,9 +46,6 @@ jobs:
             talisman:
               - 'src/talisman/install.sh'
               - 'test/talisman/**'
-            terraform-docs:
-              - 'src/terraform-docs/install.sh'
-              - 'test/terraform-docs/**'
             terragrunt:
               - 'src/terragrunt/install.sh'
               - 'test/terragrunt/**'
