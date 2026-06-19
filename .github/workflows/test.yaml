@@ -14,7 +14,7 @@ jobs:
     outputs:
       features: ${{ steps.filter.outputs.changes }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: dorny/paths-filter@v4
         id: filter
         with:
@@ -91,7 +91,7 @@ jobs:
           - registry.fedoraproject.org/fedora:latest
           - registry.access.redhat.com/ubi9/ubi:latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
@@ -112,7 +112,7 @@ jobs:
       matrix:
         features: ${{ fromJSON(needs.changes.outputs.features) }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
@@ -130,7 +130,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
