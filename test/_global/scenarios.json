@@ -1,137 +1,132 @@
 {
-    "debian": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
-        "features": {
-            "direnv": {},
-            "google-cloud-cli": {},
-            "opentofu": {},
-            "starship": {},
-            "talisman": {},
-            "terraform-docs": {},
-            "terragrunt": {},
-            "tflint": {},
-            "hashicorp": {
-                "packer": "latest",
-                "terraform": "latest",
-                "vault": "latest"
-            },
-            "buf": {},
-            "goreleaser": {},
-            "golangci-lint": {},
-            "sops": {},
-            "vesctl": {},
-            "flux": {},
-            "hadolint": {},
-            "gcrane": {},
-            "grpcurl": {}
-        }
-    },
-    "ubuntu": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "direnv": {},
-            "google-cloud-cli": {},
-            "opentofu": {},
-            "starship": {},
-            "talisman": {},
-            "terraform-docs": {},
-            "terragrunt": {},
-            "tflint": {},
-            "hashicorp": {
-                "packer": "latest",
-                "terraform": "latest",
-                "vault": "latest"
-            },
-            "buf": {},
-            "goreleaser": {},
-            "golangci-lint": {},
-            "sops": {},
-            "vesctl": {},
-            "flux": {},
-            "hadolint": {},
-            "gcrane": {},
-            "grpcurl": {}
-        }
-    },
-    "alpine": {
-        "image": "mcr.microsoft.com/devcontainers/base:alpine",
-        "features": {
-            "direnv": {},
-            "google-cloud-cli": {},
-            "opentofu": {},
-            "starship": {},
-            "talisman": {},
-            "terraform-docs": {},
-            "terragrunt": {},
-            "tflint": {},
-            "hashicorp": {
-                "packer": "latest",
-                "terraform": "latest",
-                "vault": "latest"
-            },
-            "buf": {},
-            "goreleaser": {},
-            "golangci-lint": {},
-            "sops": {},
-            "vesctl": {},
-            "flux": {},
-            "hadolint": {},
-            "gcrane": {},
-            "grpcurl": {}
-        }
-    },
-    "fedora": {
-        "image": "registry.fedoraproject.org/fedora:latest",
-        "features": {
-            "direnv": {},
-            "google-cloud-cli": {},
-            "opentofu": {},
-            "starship": {},
-            "talisman": {},
-            "terraform-docs": {},
-            "terragrunt": {},
-            "tflint": {},
-            "hashicorp": {
-                "packer": "latest",
-                "terraform": "latest",
-                "vault": "latest"
-            },
-            "buf": {},
-            "goreleaser": {},
-            "golangci-lint": {},
-            "sops": {},
-            "vesctl": {},
-            "flux": {},
-            "hadolint": {},
-            "gcrane": {},
-            "grpcurl": {}
-        }
-    },
-    "ubi": {
-        "image": "registry.access.redhat.com/ubi9/ubi:latest",
-        "features": {
-            "direnv": {},
-            "google-cloud-cli": {},
-            "opentofu": {},
-            "starship": {},
-            "talisman": {},
-            "terraform-docs": {},
-            "terragrunt": {},
-            "tflint": {},
-            "hashicorp": {
-                "packer": "latest",
-                "terraform": "latest",
-                "vault": "latest"
-            },
-            "buf": {},
-            "goreleaser": {},
-            "golangci-lint": {},
-            "sops": {},
-            "vesctl": {},
-            "flux": {},
-            "hadolint": {},
-            "gcrane": {},
-            "grpcurl": {}
-        }
+  "debian": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "google-cloud-cli": {},
+      "opentofu": {},
+      "starship": {},
+      "talisman": {},
+      "terraform-docs": {},
+      "terragrunt": {},
+      "tflint": {},
+      "hashicorp": {
+        "packer": "latest",
+        "terraform": "latest",
+        "vault": "latest"
+      },
+      "buf": {},
+      "goreleaser": {},
+      "golangci-lint": {},
+      "sops": {},
+      "vesctl": {},
+      "flux": {},
+      "hadolint": {},
+      "gcrane": {},
+      "grpcurl": {}
     }
+  },
+  "ubuntu": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "google-cloud-cli": {},
+      "opentofu": {},
+      "starship": {},
+      "talisman": {},
+      "terraform-docs": {},
+      "terragrunt": {},
+      "tflint": {},
+      "hashicorp": {
+        "packer": "latest",
+        "terraform": "latest",
+        "vault": "latest"
+      },
+      "buf": {},
+      "goreleaser": {},
+      "golangci-lint": {},
+      "sops": {},
+      "vesctl": {},
+      "flux": {},
+      "hadolint": {},
+      "gcrane": {},
+      "grpcurl": {}
+    }
+  },
+  "alpine": {
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
+    "features": {
+      "google-cloud-cli": {},
+      "opentofu": {},
+      "starship": {},
+      "talisman": {},
+      "terraform-docs": {},
+      "terragrunt": {},
+      "tflint": {},
+      "hashicorp": {
+        "packer": "latest",
+        "terraform": "latest",
+        "vault": "latest"
+      },
+      "buf": {},
+      "goreleaser": {},
+      "golangci-lint": {},
+      "sops": {},
+      "vesctl": {},
+      "flux": {},
+      "hadolint": {},
+      "gcrane": {},
+      "grpcurl": {}
+    }
+  },
+  "fedora": {
+    "image": "registry.fedoraproject.org/fedora:latest",
+    "features": {
+      "google-cloud-cli": {},
+      "opentofu": {},
+      "starship": {},
+      "talisman": {},
+      "terraform-docs": {},
+      "terragrunt": {},
+      "tflint": {},
+      "hashicorp": {
+        "packer": "latest",
+        "terraform": "latest",
+        "vault": "latest"
+      },
+      "buf": {},
+      "goreleaser": {},
+      "golangci-lint": {},
+      "sops": {},
+      "vesctl": {},
+      "flux": {},
+      "hadolint": {},
+      "gcrane": {},
+      "grpcurl": {}
+    }
+  },
+  "ubi": {
+    "image": "registry.access.redhat.com/ubi9/ubi:latest",
+    "features": {
+      "google-cloud-cli": {},
+      "opentofu": {},
+      "starship": {},
+      "talisman": {},
+      "terraform-docs": {},
+      "terragrunt": {},
+      "tflint": {},
+      "hashicorp": {
+        "packer": "latest",
+        "terraform": "latest",
+        "vault": "latest"
+      },
+      "buf": {},
+      "goreleaser": {},
+      "golangci-lint": {},
+      "sops": {},
+      "vesctl": {},
+      "flux": {},
+      "hadolint": {},
+      "gcrane": {},
+      "grpcurl": {}
+    }
+  }
 }

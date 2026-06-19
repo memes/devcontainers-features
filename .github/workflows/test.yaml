@@ -22,9 +22,6 @@ jobs:
             buf:
               - 'src/buf/install.sh'
               - 'test/buf/**'
-            direnv:
-              - 'src/direnv/install.sh'
-              - 'test/direnv/**'
             flux:
               - 'src/flux/install.sh'
               - 'test/flux/**'

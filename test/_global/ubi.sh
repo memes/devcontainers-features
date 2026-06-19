@@ -6,7 +6,6 @@ set -e
 # shellcheck disable=SC1091
 source dev-container-features-test-lib
 
-check "Verify a version of direnv is installed" direnv version
 check "Verify a version of gcloud is installed" sh -c "gcloud version | grep 'Google Cloud SDK'"
 check "Verify a version of tofu is installed" tofu version
 check "Verify a version of starship is installed" starship --version
