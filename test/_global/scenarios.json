@@ -3,7 +3,6 @@
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
       "google-cloud-cli": {},
-      "starship": {},
       "talisman": {},
       "terraform-docs": {},
       "terragrunt": {},
@@ -26,7 +25,6 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
       "google-cloud-cli": {},
-      "starship": {},
       "talisman": {},
       "terraform-docs": {},
       "terragrunt": {},
@@ -49,7 +47,6 @@
     "image": "mcr.microsoft.com/devcontainers/base:alpine",
     "features": {
       "google-cloud-cli": {},
-      "starship": {},
       "talisman": {},
       "terraform-docs": {},
       "terragrunt": {},
@@ -72,7 +69,6 @@
     "image": "registry.fedoraproject.org/fedora:latest",
     "features": {
       "google-cloud-cli": {},
-      "starship": {},
       "talisman": {},
       "terraform-docs": {},
       "terragrunt": {},
@@ -95,7 +91,6 @@
     "image": "registry.access.redhat.com/ubi9/ubi:latest",
     "features": {
       "google-cloud-cli": {},
-      "starship": {},
       "talisman": {},
       "terraform-docs": {},
       "terragrunt": {},

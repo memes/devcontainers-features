@@ -43,9 +43,6 @@ jobs:
             hadolint:
               - 'src/hadolint/install.sh'
               - 'test/hadolint/**'
-            starship:
-              - 'src/starship/install.sh'
-              - 'test/starship/**'
             talisman:
               - 'src/talisman/install.sh'
               - 'test/talisman/**'
