@@ -1,14 +1,14 @@
 {
   "features": {
+    "ghcr.io/devcontainers-extra/features/direnv:1": {
+      "version": "1.0.3",
+      "resolved": "ghcr.io/devcontainers-extra/features/direnv@sha256:cd4c07352fb75cadcdde6f8cabba49224341eb4d5348870a7434b0ad15128a48",
+      "integrity": "sha256:cd4c07352fb75cadcdde6f8cabba49224341eb4d5348870a7434b0ad15128a48"
+    },
     "ghcr.io/devcontainers/features/docker-in-docker:3": {
       "version": "3.1.0",
       "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:62e04ec83d944da4fd2830f68a677d1f5466c0654aea1e4baa30232d16029ac1",
       "integrity": "sha256:62e04ec83d944da4fd2830f68a677d1f5466c0654aea1e4baa30232d16029ac1"
-    },
-    "ghcr.io/memes/devcontainers-features/direnv:1": {
-      "version": "1.1.1",
-      "resolved": "ghcr.io/memes/devcontainers-features/direnv@sha256:5805278468f5403e2ffbd0aa0f4ce59bf3fc54acc7fe754908d203a6a43704b6",
-      "integrity": "sha256:5805278468f5403e2ffbd0aa0f4ce59bf3fc54acc7fe754908d203a6a43704b6"
     },
     "ghcr.io/memes/devcontainers-features/talisman:1": {
       "version": "1.1.1",
