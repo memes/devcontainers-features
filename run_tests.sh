@@ -7,7 +7,7 @@ error() {
     exit 1
 }
 
-features="${features:-"$(find src -maxdepth 1 -mindepth 1 -printf '%f ')"}"
+features="${features:-"$(find src -maxdepth 2 -mindepth 2 -name devcontainer-feature.json -printf '%h ' | sed 's/src\///g')"}"
 images="${images:-"mcr.microsoft.com/devcontainers/base:debian mcr.microsoft.com/devcontainers/base:ubuntu mcr.microsoft.com/devcontainers/base:alpine registry.fedoraproject.org/fedora:latest registry.access.redhat.com/ubi9/ubi:latest"}"
 
 devcontainer features test --global-scenarios-only || \

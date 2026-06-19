@@ -22,9 +22,6 @@ jobs:
             buf:
               - 'src/buf/install.sh'
               - 'test/buf/**'
-            direnv:
-              - 'src/direnv/install.sh'
-              - 'test/direnv/**'
             flux:
               - 'src/flux/install.sh'
               - 'test/flux/**'
@@ -37,9 +34,6 @@ jobs:
             google-cloud-cli:
               - 'src/google-cloud-cli/install.sh'
               - 'test/google-cloud-cli/**'
-            golangci-lint:
-              - 'src/golangci-lint/install.sh'
-              - 'test/golangci-lint/**'
             goreleaser:
               - 'src/goreleaser/install.sh'
               - 'test/goreleaser/**'
@@ -49,24 +43,9 @@ jobs:
             hadolint:
               - 'src/hadolint/install.sh'
               - 'test/hadolint/**'
-            opentofu:
-              - 'src/opentofu/install.sh'
-              - 'test/opentofu/**'
-            sops:
-              - 'src/sops/install.sh'
-              - 'test/sops/**'
-            starship:
-              - 'src/starship/install.sh'
-              - 'test/starship/**'
             talisman:
               - 'src/talisman/install.sh'
               - 'test/talisman/**'
-            terraform-docs:
-              - 'src/terraform-docs/install.sh'
-              - 'test/terraform-docs/**'
-            terragrunt:
-              - 'src/terragrunt/install.sh'
-              - 'test/terragrunt/**'
             tflint:
               - 'src/tflint/install.sh'
               - 'test/tflint/**'

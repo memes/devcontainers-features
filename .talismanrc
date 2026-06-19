@@ -1,6 +1,7 @@
 # spell-checker: disable
 # yamllint disable rule:line-length
 ---
+version: "1.0"
 fileignoreconfig:
   - filename: release-please-config.json
     checksum: a3b2bab5e2585704dbe934fba92ded9eae84161eca1c76a1789e31768e539163
@@ -14,4 +15,7 @@ fileignoreconfig:
     checksum: 109361f36920d076c3dca3b0df2aef3aa9c16fa357803b56981a7a1760e92beb
   - filename: src/hashicorp/install.sh
     checksum: cb4569cce0db06bec95d0033837442e80708dc2dfde948a7a3677085507a67b6
-version: "1.0"
+  - filename: .devcontainer/devcontainer-lock.json
+    checksum: 17d61f7c7596130513e9ccbe2384d03c1a4e07ac5c6b2e2752161d1599f1df46
+    ignore_detectors:
+      - filecontent
