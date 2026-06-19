@@ -1,6 +1,6 @@
 # MEmes' devcontainer features
 
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![GitHub last commit](https://img.shields.io/github/last-commit/memes/devcontainers-features)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 This repository contains a _collection_ of small devcontainer Features that can add-in common utilities used when
@@ -25,7 +25,6 @@ with whatever is the latest release of [starship](https://starship.rs)
             "version": "511.0.0",
             "components": "pubsub-emulator istioctl kubectl"
         },
-        "ghcr.io/memes/devcontainer-features/starship:1": {},
         "ghcr.io/memes/devcontainer-features/talisman:1": {
             "version": "1.32.0"
         }
