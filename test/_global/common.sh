@@ -17,9 +17,6 @@ check "Verify a version of terraform is installed" terraform -version
 check "Verify a version of vault is installed" vault -version
 check "Verify a version of buf is installed" buf --version
 check "Verify a version of goreleaser is installed" goreleaser --version
-check "Verify a version of sops is installed" sops --version
-check "Verify a version of age is installed " age --version
-check "Verify a version of GnuPG is installed " gpg --version
 check "Verify a version of vesctl is installed " vesctl version
 check "Verify a version of flux is installed " flux version --client
 check "Verify a version of hadolint is installed " hadolint --version
