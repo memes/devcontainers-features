@@ -46,9 +46,6 @@ jobs:
             talisman:
               - 'src/talisman/install.sh'
               - 'test/talisman/**'
-            terragrunt:
-              - 'src/terragrunt/install.sh'
-              - 'test/terragrunt/**'
             tflint:
               - 'src/tflint/install.sh'
               - 'test/tflint/**'

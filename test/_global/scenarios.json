@@ -4,7 +4,6 @@
     "features": {
       "google-cloud-cli": {},
       "talisman": {},
-      "terragrunt": {},
       "tflint": {},
       "hashicorp": {
         "packer": "latest",
@@ -25,7 +24,6 @@
     "features": {
       "google-cloud-cli": {},
       "talisman": {},
-      "terragrunt": {},
       "tflint": {},
       "hashicorp": {
         "packer": "latest",
@@ -46,7 +44,6 @@
     "features": {
       "google-cloud-cli": {},
       "talisman": {},
-      "terragrunt": {},
       "tflint": {},
       "hashicorp": {
         "packer": "latest",
@@ -67,7 +64,6 @@
     "features": {
       "google-cloud-cli": {},
       "talisman": {},
-      "terragrunt": {},
       "tflint": {},
       "hashicorp": {
         "packer": "latest",
@@ -88,7 +84,6 @@
     "features": {
       "google-cloud-cli": {},
       "talisman": {},
-      "terragrunt": {},
       "tflint": {},
       "hashicorp": {
         "packer": "latest",

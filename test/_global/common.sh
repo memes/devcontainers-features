@@ -6,7 +6,6 @@ set -e
 
 check "Verify a version of gcloud is installed" sh -c "gcloud version | grep 'Google Cloud SDK'"
 check "Verify a version of talisman is installed" talisman --version
-check "Verify a version of terragrunt is installed" terragrunt --version
 check "Verify a version of tflint is installed" tflint --version
 check "Verify a version of packer is installed" packer -version
 check "Verify a version of terraform is installed" terraform -version
