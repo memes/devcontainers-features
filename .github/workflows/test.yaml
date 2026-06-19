@@ -34,9 +34,6 @@ jobs:
             google-cloud-cli:
               - 'src/google-cloud-cli/install.sh'
               - 'test/google-cloud-cli/**'
-            golangci-lint:
-              - 'src/golangci-lint/install.sh'
-              - 'test/golangci-lint/**'
             goreleaser:
               - 'src/goreleaser/install.sh'
               - 'test/goreleaser/**'
