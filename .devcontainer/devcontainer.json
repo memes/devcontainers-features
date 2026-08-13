@@ -14,7 +14,7 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:3": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:4": {},
         "ghcr.io/devcontainers-extra/features/direnv:1": {},
         "ghcr.io/memes/devcontainers-features/talisman:1": {}
     },
